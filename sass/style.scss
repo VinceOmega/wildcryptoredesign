@@ -1,0 +1,127 @@
+html, body{ 
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+body{
+	background: #1B1718;
+}
+
+#container{
+
+	min-width: 1440px;
+
+	.-hide{
+		display: none;
+	}
+
+	header{
+
+		nav{
+
+			background: rgba( 255, 255, 255, .8 );
+			-webkit-transition: background 4s ease-in-out;
+			-moz-transition: background 4s ease-in-out;
+			-o-transition: background 4s ease-in-out;
+			transition: background 4s ease-in-out;
+
+			&:hover{
+				background: rgba( 255, 255, 255, 1 );
+				-webkit-transition: background 4s ease-in-out;
+				-moz-transition: background 4s ease-in-out;
+				-o-transition: background 4s ease-in-out;
+				transition: background 4s ease-in-out;
+			}
+
+			div{
+
+				i{
+
+					&.fa-search{
+
+
+
+					}
+				}
+
+			}
+
+			ul {
+
+				display: inline-block;
+
+				li{
+
+					ul{
+
+						display: block;
+	    				position: relative;
+	    				left: -40px;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	section{
+
+		&.jumbotron{
+
+			height: 300px;
+			width: 100%;
+
+		}
+
+	}
+
+	main{
+
+		section{
+
+			&.-games{
+
+				ul{
+					display: block;
+
+					li{
+
+						display: inline-block;
+
+						div{
+
+							&.-overlay{
+
+								position: fixed;
+
+							}
+
+							&.-hide{
+
+								display: none;
+
+							}
+
+						}
+
+						img{
+
+							width: 295px;
+							height: 158px;
+
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+}
+
+

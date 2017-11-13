@@ -21,17 +21,17 @@ body{
 		nav{
 
 			background: rgba( 255, 255, 255, .8 );
-			-webkit-transition: background 4s ease-in-out;
-			-moz-transition: background 4s ease-in-out;
-			-o-transition: background 4s ease-in-out;
-			transition: background 4s ease-in-out;
+			-webkit-transition: background 1s ease-in-out;
+			-moz-transition: background 1s ease-in-out;
+			-o-transition: background 1s ease-in-out;
+			transition: background 1s ease-in-out;
 
 			&:hover{
 				background: rgba( 255, 255, 255, 1 );
-				-webkit-transition: background 4s ease-in-out;
-				-moz-transition: background 4s ease-in-out;
-				-o-transition: background 4s ease-in-out;
-				transition: background 4s ease-in-out;
+				-webkit-transition: background 1s ease-in-out;
+				-moz-transition: background 1s ease-in-out;
+				-o-transition: background 1s ease-in-out;
+				transition: background 1s ease-in-out;
 			}
 
 			div{

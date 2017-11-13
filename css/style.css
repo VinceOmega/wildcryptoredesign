@@ -1,2 +1,46 @@
-html,body{margin:0;padding:0;font-family:'Oswald', sans-serif}body{background:#1B1718}#container{min-width:1440px}#container .-hide{display:none}#container header nav{background:rgba(255,255,255,0.8);-webkit-transition:background 4s ease-in-out;-moz-transition:background 4s ease-in-out;-o-transition:background 4s ease-in-out;transition:background 4s ease-in-out}#container header nav:hover{background:#fff;-webkit-transition:background 4s ease-in-out;-moz-transition:background 4s ease-in-out;-o-transition:background 4s ease-in-out;transition:background 4s ease-in-out}#container header nav ul{display:inline-block}#container header nav ul li ul{display:block;position:relative;left:-40px}#container section.jumbotron{height:300px;width:100%}#container main section.-games ul{display:block}#container main section.-games ul li{display:inline-block}#container main section.-games ul li div.-overlay{position:fixed}#container main section.-games ul li div.-hide{display:none}#container main section.-games ul li img{width:295px;height:158px}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif; }
+
+body {
+  background: #1B1718; }
+
+#container {
+  min-width: 1440px; }
+  #container .-hide {
+    display: none; }
+  #container header nav {
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out; }
+    #container header nav:hover {
+      background: white;
+      -webkit-transition: background 1s ease-in-out;
+      -moz-transition: background 1s ease-in-out;
+      -o-transition: background 1s ease-in-out;
+      transition: background 1s ease-in-out; }
+    #container header nav ul {
+      display: inline-block; }
+      #container header nav ul li ul {
+        display: block;
+        position: relative;
+        left: -40px; }
+  #container section.jumbotron {
+    height: 300px;
+    width: 100%; }
+  #container main section.-games ul {
+    display: block; }
+    #container main section.-games ul li {
+      display: inline-block; }
+      #container main section.-games ul li div.-overlay {
+        position: fixed; }
+      #container main section.-games ul li div.-hide {
+        display: none; }
+      #container main section.-games ul li img {
+        width: 295px;
+        height: 158px; }
+
 /*# sourceMappingURL=style.css.map */

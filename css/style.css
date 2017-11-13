@@ -7,7 +7,9 @@ body {
   background: #1B1718; }
 
 #container {
-  min-width: 1440px; }
+  min-width: 1000px;
+  margin: 0;
+  padding: 0; }
   #container .-hide {
     display: none; }
   #container header nav {
@@ -29,8 +31,11 @@ body {
         position: relative;
         left: -40px; }
   #container section.jumbotron {
-    height: 300px;
-    width: 100%; }
+    height: auto;
+    width: 1920px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0; }
   #container main section.-games ul {
     display: block; }
     #container main section.-games ul li {

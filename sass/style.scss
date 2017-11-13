@@ -10,10 +10,14 @@ body{
 
 #container{
 
-	min-width: 1440px;
+	min-width: 1000px;
+	margin: 0;
+	padding: 0;
 
 	.-hide{
+
 		display: none;
+
 	}
 
 	header{
@@ -73,8 +77,11 @@ body{
 
 		&.jumbotron{
 
-			height: 300px;
-			width: 100%;
+			height: auto;
+			width: 1920px;
+			margin: 0;
+			padding: 0;
+			border-radius: 0;
 
 		}
 

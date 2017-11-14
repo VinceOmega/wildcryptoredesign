@@ -73,7 +73,8 @@ body {
   #container footer div.div.-bottom.-fullwidth ul {
     display: block; }
     #container footer div.div.-bottom.-fullwidth ul li {
-      display: block; }
+      display: inline-block;
+      margin: 0 7%; }
       #container footer div.div.-bottom.-fullwidth ul li div {
         width: 50px; }
         #container footer div.div.-bottom.-fullwidth ul li div img {

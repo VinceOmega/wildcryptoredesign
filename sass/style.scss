@@ -20,6 +20,15 @@ body{
 
 	}
 
+	a {
+
+		img{
+
+			border: 0;
+		}
+
+	}
+
 	header{
 
 		margin: 0;
@@ -133,6 +142,102 @@ body{
 		}
 	}
 
+
+	footer{
+
+		div{
+
+			&.div.-top.-left{
+
+				min-width: 500px;
+				display: inline-block;
+				width: 60%;
+				// max-width: 100%;
+
+				ul{
+					display: inline-block;
+				}
+			}
+
+			&.div.-top.-right{
+
+				min-width: 450px;
+				display: inline-block;
+				width: 25%;
+				// max-width: 100%;
+
+				div{
+
+					&.-top{
+
+						display: block;
+						width: 125px;
+						margin: 0;
+						padding: 0;
+
+						a{
+							
+							img{
+
+								width: 100%;
+								max-height: 100%;
+								object-fit: contain;
+
+							}
+
+						}
+
+					}
+
+					&.-bottom{
+
+						p{
+
+							display:block;
+							
+						}
+
+					}
+
+
+				}
+
+
+
+			}
+
+			&.div.-bottom.-fullwidth{
+
+				ul{
+
+					display: block;
+
+						li{
+
+						    display: inline-block;
+						    margin: 0 7%;
+						    
+							div{
+
+								width: 50px;
+
+								img{
+
+									width: 100%;
+									max-height: 100%;
+									object-fit: contain;
+
+								}
+
+							}
+
+						}
+
+				}
+
+			}
+		}
+	}
 }
 
 

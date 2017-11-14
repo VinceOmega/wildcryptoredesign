@@ -22,6 +22,10 @@ body{
 
 	header{
 
+		margin: 0;
+		padding: 0;
+		width: auto;
+
 		nav{
 
 			background: rgba( 255, 255, 255, .8 );
@@ -78,7 +82,7 @@ body{
 		&.jumbotron{
 
 			height: auto;
-			width: 1920px;
+			width: auto;
 			margin: 0;
 			padding: 0;
 			border-radius: 0;

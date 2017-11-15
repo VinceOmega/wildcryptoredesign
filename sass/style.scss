@@ -78,6 +78,9 @@ body{
 					}
 				}
 
+				margin: 0;
+				padding: 0;
+
 				&.-center{
 
 					margin: 0 auto;
@@ -152,6 +155,7 @@ body{
 
 				display: inline-block;
 				margin: 30px auto;
+				padding: 0;
 
 				li{
 
@@ -193,6 +197,8 @@ body{
 
 	main{
 
+		color: white;
+
 		h3{
 
 			&.header{
@@ -204,7 +210,6 @@ body{
 
 		}
 
-		color: white;
 
 		section{
 

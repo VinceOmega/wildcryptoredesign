@@ -29,11 +29,27 @@ body{
 
 	}
 
+	ul{
+
+		li{
+
+			text-decoration: none;
+			list-style: none;
+
+		}
+		
+	}
+
 	header{
 
 		margin: 0;
 		padding: 0;
 		width: auto;
+		font-weight: 300;
+
+		a{
+			color: #363435;
+		}
 
 		nav{
 
@@ -62,13 +78,88 @@ body{
 					}
 				}
 
+				&.-center{
+
+					margin: 0 auto;
+    				padding: 0;
+
+				}
+
+				ul{
+
+					li{
+
+						&.list{
+
+							display: inline-block;
+    						margin: 0 25px;
+
+						}
+
+					}
+
+				}
+
+				&.-login{
+
+					margin: 25px 0;
+
+					form{
+
+						input[type='text'], input[type='password']{
+
+							border: none;
+							border-bottom-style: solid;
+    						border-bottom-color: black;
+    						background: transparent;
+
+							&:active{
+
+								border: none;
+								border-bottom-style: solid;
+	    						border-bottom-color: black;
+	    						background: transparent;
+
+							}
+
+							&:hover{
+
+
+							}
+
+						}
+
+						input.-btn{
+
+						    background: #BF1E2E;
+						    border: 1px solid #808080;
+						    border-radius: 8px;
+						    display: inline-block;
+						    color: #cdcdcd;
+						    line-height: 1.6;
+						    transition: all 0.3s ease;
+						    font-weight: 300;
+						    width: 80px;
+						    height: 30px;
+
+						}
+					}
+				}
+
 			}
 
 			ul {
 
 				display: inline-block;
+				margin: 30px auto;
 
 				li{
+
+					a{
+
+
+
+					}
 
 					ul{
 
@@ -102,18 +193,35 @@ body{
 
 	main{
 
+		h3{
+
+			&.header{
+
+				margin: 15px 0;
+				padding: 0 0 0 6.8%;
+
+			}
+
+		}
+
+		color: white;
+
 		section{
 
 			&.-games{
 
 				ul{
 					display: block;
+					margin: 0;
+					padding: 0 7%;
 
 					li{
 
 						display: inline-block;
 
 						div{
+
+							text-align: center;
 
 							&.-overlay{
 
@@ -145,6 +253,8 @@ body{
 
 	footer{
 
+		color: white;
+
 		div{
 
 			&.div.-top.-left{
@@ -155,8 +265,38 @@ body{
 				// max-width: 100%;
 
 				ul{
+
 					display: inline-block;
+
+					li{
+
+						display: block;
+
+						&.-heading{
+
+							font-weight: 700;
+
+						}
+
+					    ul{
+
+					    	display: block;
+					    	margin: 0;
+    						padding: 0;
+
+					    	li{
+
+					    		display: block;
+					    		font-weight: 300;
+
+					    	}
+					    	
+					    }
+
+					}
+
 				}
+
 			}
 
 			&.div.-top.-right{
@@ -194,6 +334,7 @@ body{
 						p{
 
 							display:block;
+							font-weight: 300;
 							
 						}
 
@@ -212,26 +353,26 @@ body{
 
 					display: block;
 
-						li{
+					li{
 
-						    display: inline-block;
-						    margin: 0 7%;
-						    
-							div{
+					    display: inline-block;
+					    margin: 0 7%;
+					    
+						div{
 
-								width: 50px;
+							width: 50px;
 
-								img{
+							img{
 
-									width: 100%;
-									max-height: 100%;
-									object-fit: contain;
-
-								}
+								width: 100%;
+								max-height: 100%;
+								object-fit: contain;
 
 							}
 
 						}
+
+					}
 
 				}
 

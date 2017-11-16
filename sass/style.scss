@@ -5,14 +5,19 @@ html, body{
 }
 
 body{
-	background: #1B1718;
+	background: #111;
 }
 
 #container{
 
+	aside{
+		float: right;
+	}
+
 	min-width: 1000px;
 	margin: 0;
 	padding: 0;
+	background: #1B1718;
 
 	.-hide{
 
@@ -21,6 +26,8 @@ body{
 	}
 
 	a {
+
+		text-decoration: none;
 
 		img{
 
@@ -208,16 +215,78 @@ body{
 
 		section{
 
+			div{
+
+				&#accordion{
+
+					max-width: 500px;
+				    margin: 0 auto;
+				    padding: 15px 0;
+				    background: white;
+
+				    a{
+
+				    	color: black;
+
+				    }
+
+				    .panel-heading{
+
+				    	text-align: center;
+
+				    }
+
+				}
+
+			}
+
 			&.-games{
+
+				div{
+
+					&.-padded-15{
+
+					    margin: 0;
+					    padding: 20px 0;
+					    width: auto;
+					    background: #111;
+
+					}
+				}
+
+				div{
+
+					&.-loadmore{
+
+						display: block;
+    					position: relative;
+    					margin: 0 auto;
+    					width: 140px;
+    					background: #111;
+    					padding: 15px 30px;
+
+    					a{
+
+						    color: white;
+						    text-decoration: none;
+						    font-weight: 300;
+
+    					}
+
+					}
+
+
+				}
 
 				ul{
 					display: block;
 					margin: 0;
-					padding: 0 7%;
+
 
 					li{
 
 						display: inline-block;
+					    padding: 3px;
 
 						div{
 
@@ -225,13 +294,21 @@ body{
 
 							&.-overlay{
 
-								position: fixed;
+								// position: fixed;
 
 							}
 
 							&.-hide{
 
 								display: none;
+
+							}
+
+							&.-game-title{
+
+							    padding: 15px;
+							    background: #BF1E2E;
+							    font-weight: 700;
 
 							}
 
@@ -253,6 +330,7 @@ body{
 
 	footer{
 
+		background: #111;
 		color: white;
 
 		div{

@@ -289,8 +289,8 @@ body{
 				    padding: 30px 0;
 				    background: white;
 				    border: 1px solid black;
-				    outline: 1px solid black;
 				    color: black;
+				    border-radius: 5px;
 
 				    div{
 
@@ -305,12 +305,20 @@ body{
 				    		&:hover{
 
 				    			background: #BF1E2E;
+				    			color: white;
 				    			transition: all .3s ease;
 								-webkit-transition: all .3s ease;
 								-moz-transition: all .3s ease;
 								-o-transition: all .3s ease;
 
 				    		}
+
+				    		.panel-body{
+
+				    			padding: 20px 10px;
+
+				    		}
+
 				    	}
 
 				    	&.-info-box-header{
@@ -495,7 +503,7 @@ body{
 							    background: white;
 							    color: black;
 							    padding: 5px 8px;
-							    border: 2px solid black;
+							    border: 1px solid black;
 							    border-radius: 10px;
 							    /* width: 5px; */
 							    height: 40px;

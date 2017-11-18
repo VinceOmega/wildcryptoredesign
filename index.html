@@ -11,11 +11,11 @@
 	<body>
 		<div id="container" class="container-fluid">
 			<header id="header" class="row">
-				<nav class="nav -fixed -top col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="div -logo col-lg-3 col-md-3 col-sm-3 col-xs-3">
-						<img src="img/wild-logo-300x86.png" class="" alt="wild crypo logo" role="img" >
+				<nav class="nav -fixed -top col-lg-12 col-md-12">
+					<div class="div -logo col-lg-3 col-md-3">
+						<a href="#" alt="Wild Crypto Logo"><img src="img/wild-logo-300x86.png" class="" alt="wild crypo logo" role="img" ></a>
 					</div>
-					<div class="div -content col-lg-5 col-md-5 col-sm-5 col-xs-5">
+					<div class="div -content col-lg-5 col-md-5">
 						<!-- <i class="fa fa-search"></i> -->
 						<ul>
 							<li class="list -header">
@@ -35,7 +35,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="div -login col-lg-4 col-md-4 col-sm-4">
+					<div class="div -login col-lg-4 col-md-12">
 						<form name="login" class="form -nav">
 							<input type="text" 		name="text" 		class="input -text -email" 			placeholder="email">
 							<input type="password"	name="password" 	class="input -passowrd 	-password" 	placeholder="password">
@@ -45,33 +45,36 @@
 				</nav>
 			</header>
 
-			<main role="main" id="home">
-				<section class="jumbotron">
+			<main role="main" id="home" class="row">
+
+				<section class="jumbotron col-lg-12 col-md-12">
 					<img src="img/diceandchips_1920x500.jpg" class="img-fluid" alt="Responsive image" alt="slide img number one">
 					<!-- <img src="" alt="slide img number one"> -->
 					<!-- <img src="" alt="slide img number one"> -->
 					<!-- <img src="" alt="slide img number one"> -->
 					<!-- <img src="" alt="slide img number one"> -->
 				</section>
-				<section class="section -games">
-					<h3 class="header -level3 -raspberry">TOP GAMES</h3>
+
+				<section class="section -games col-lg-12 col-md-12">
+					<h3 class="header -level3 -raspberry">OUR GAMES</h3>
 					<div class="div -container -padded-15">
 						<ul>
-							<li class="li -list -new"><div class="div -overlay"><img src="img/chips_poker_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list -popular"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/gamebox_solid_gold_smash_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/tiki_columns_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/woman_in_front_of_casino_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/chips_poker_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/tiki_columns_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/gamebox_solid_gold_smash_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/woman_in_front_of_casino_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/chips_poker_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
-							<li class="li -list"><div class="div -overlay"><img src="img/tiki_columns_295x158.png" class="img-fluid" ><div class="-game-title">Name of game</div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list -new"><div class="div -overlay"><img src="img/chips_poker_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list -popular"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/gamebox_solid_gold_smash_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/tiki_columns_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/woman_in_front_of_casino_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/chips_poker_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/tiki_columns_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/gamebox_solid_gold_smash_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/woman_in_front_of_casino_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/craps_table_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/chips_poker_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/tiki_columns_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
+							<li class="li -list"><div class="div -overlay"><img src="img/chips_poker_295x158.png" class="img-fluid" ><div class="-game-title">Name of game<span class="-game-price">$.50</span></div><a href="#" class="a -hide">Play Now</a></div></li>
 						</ul>
 					</div>
 					<div class="div -loadmore">
@@ -79,19 +82,14 @@
 					</div>
 				</section>
 
-				<section>
-					<div class="div -info -box">
+				<section class="section -info-box col-lg-12 col-md-12">
 
-					</div>
-					<div class="div -info -box">
-
-					</div>
-				</section>
-
-				<section>
-
-					<div class="accordion__content panel-group" id="accordion">
+					<div class="accordion__content panel-group div -info-box" id="accordion">
 	            
+						<div class="div -info-box-header">
+							<i class="fa fa-question-circle" aria-hidden="true"></i><h3>F.A.Q</h3>
+						</div>
+
 			            <div class="panel panel-default panel-edit">
 			                <div class="panel-heading">
 			                    <h4 class="panel-title">
@@ -199,33 +197,37 @@
 		    	</section>
 
 			</main>
-			<footer id="footer">
+
+			<footer id="footer" class="col-lg-12 col-md-12">
 				<div class="div -top -left">
-					<ul>
-						<li class="list -heading">Navigation
-							<ul>
-								<li class="list -items">About Afro Millions Lotto</li>
-								<li class="list -items">How to Play</li>
-								<li class="list -items">How to Add Funds</li>
-								<li class="list -items">Results</li>
-								<li class="list -items">FAQs</li>
-							</ul>
-						</li>
-					</ul>
-					<ul>
+
+					<ul class="list -container">
 						<li class="list -heading">
 							Information
 							<ul>
-								<li class="list -items">Terms & Conditions</li>
-								<li class="list -items">Privacy Policy</li>
-								<li class="list -items">Responsible Gambling</li>
-								<li class="list -items">Cookies</li>
-								<li class="list -items">Security</li>
-								<li class="list -items">Complaints</li>
-								<li class="list -items">Contact Us</li>
+								<li class="list -items"><a href="#">Terms & Conditions</a></li>
+								<li class="list -items"><a href="#">Privacy Policy</a></li>
+								<li class="list -items"><a href="#">Responsible Gambling</a></li>
+								<li class="list -items"><a href="#">Cookies</a></li>
+								<li class="list -items"><a href="#">Security</a></li>
+								<li class="list -items"><a href="#">Complaints</a></li>
+								<li class="list -items"><a href="#">Contact Us</a></li>
 							</ul>
 						</li>
 					</ul>
+
+					<ul class="list -container">
+						<li class="list -heading">Navigation
+							<ul>
+								<li class="list -items"><a href="#">About Afro Millions Lotto</a></li>
+								<li class="list -items"><a href="#">How to Play</a></li>
+								<li class="list -items"><a href="#">How to Add Funds</a></li>
+								<li class="list -items"><a href="#">Results</a></li>
+								<li class="list -items"><a href="#">FAQs</a></li>
+							</ul>
+						</li>
+					</ul>
+
 				</div>
 				<div class="div -top -right">
 					<div class="div -top">
@@ -252,6 +254,7 @@
 					</div>
 				</div>
 			</footer>
+
 			<aside id="jumptotop" class="aside -returntotop">
 				<a href="#" class="a -return"><i class="fa fa-chevron-up"></i></a>
 			</aside>

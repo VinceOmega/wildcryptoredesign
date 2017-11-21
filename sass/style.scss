@@ -1,7 +1,7 @@
 html, body{ 
 	margin: 0;
 	padding: 0;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif !important;
 }
 
 body{
@@ -317,6 +317,9 @@ body{
 		color: white;
 		margin: 0;
 		padding: 0;
+		// background-image: url('/img/curls.png');
+		background-image: url('/themes/wild/img/curls.png');
+		background-repeat: repeat;
 
 		section{
 
@@ -545,6 +548,47 @@ body{
 							-moz-transition: all .3s ease;
 							-o-transition: all .3s ease;
 
+				    		.panel-heading{
+
+						    	text-align: left;
+						    	border: none;
+						    	border-bottom: 1px solid black;
+						    	padding: 5px 0 5px 10px;
+						    	margin: 2px 0;
+						    	background-image: none;
+						    	background-color: white;
+						    	background-repeat: no-repeat;
+						    	transition: all .3s ease;
+								-webkit-transition: all .3s ease;
+								-moz-transition: all .3s ease;
+								-o-transition: all .3s ease;
+
+						    	&:hover{
+
+					    			background: #BF1E2E;
+					    			color: white;
+					    			transition: all .3s ease;
+									-webkit-transition: all .3s ease;
+									-moz-transition: all .3s ease;
+									-o-transition: all .3s ease;
+
+				    			}
+
+
+						    	h4{
+
+						    		line-height: 2.2;
+						    	}
+
+
+						    }
+
+				    		.panel-body{
+
+				    			padding: 20px 10px;
+
+				    		}
+
 				    		&:hover{
 
 				    			background: #BF1E2E;
@@ -554,15 +598,11 @@ body{
 								-moz-transition: all .3s ease;
 								-o-transition: all .3s ease;
 
-				    		}
-
-				    		.panel-body{
-
-				    			padding: 20px 10px;
-
-				    		}
+			    			}
 
 				    	}
+
+
 
 				    	&.-info-box-header{
 
@@ -600,44 +640,40 @@ body{
 				    		
 				    	}
 
-				    }
+				    	a{
 
-				    a{
-
-				    	color: black;
-				    	font-weight: 300;
-				    	font-size: 20px;
-						transition: all .3s ease;
-						-webkit-transition: all .3s ease;
-						-moz-transition: all .3s ease;
-						-o-transition: all .3s ease;
-
-				    	&:hover{
-
-				    		color: white;
-				    		transition: all .3s ease;
+					    	color: black;
+					    	font-weight: 300;
+					    	font-size: 20px;
+							transition: all .3s ease;
 							-webkit-transition: all .3s ease;
 							-moz-transition: all .3s ease;
 							-o-transition: all .3s ease;
 
-				    	}
+					    	&:hover{
+
+					    		color: white;
+					    		transition: all .3s ease;
+								-webkit-transition: all .3s ease;
+								-moz-transition: all .3s ease;
+								-o-transition: all .3s ease;
+
+					    	}
+
+					    	&.collapsed{
+
+								display: inline-block;
+								overflow: hidden;
+
+							}
+
+					    }
 
 				    }
 
-				    .panel-heading{
-
-				    	text-align: left;
-				    	border-bottom: 1px solid black;
-				    	padding: 5px 0 5px 10px;
-				    	margin: 2px 0;
-
-				    	h4{
-
-				    		line-height: 2.2;
-				    	}
 
 
-				    }
+
 
 				}
 
@@ -937,7 +973,7 @@ body{
 		background: #111;
 		color: white;
 	    padding: 20px 0;
-	    margin: 30px 0 0 0;
+	    margin: 0 0 0 0;
 
 		div{
 

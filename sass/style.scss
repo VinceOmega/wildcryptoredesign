@@ -5,7 +5,94 @@ html, body{
 }
 
 body{
-	background: #111;
+	background: #111 !important;
+}
+
+.carousel-item{
+
+	height: 500px;
+    position: relative;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+
+    &.active{
+
+    	display: block;
+
+    }
+
+    img{
+
+    	height: 500px;
+
+    }
+
+}
+
+.carousel-control-prev {
+
+    left: 0;
+
+}
+
+.carousel-control-next {
+
+    right: 0;
+
+}
+
+.carousel-control-next-icon {
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+}
+
+.carousel-control-prev-icon{
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+
+}
+
+.carousel-prev-icon{
+
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+
+}
+
+.img-fluid{
+
+	max-width: 100%;
+    height: auto;
+
 }
 
 #container{
@@ -122,7 +209,7 @@ body{
 
 		nav{
 
-			background: rgba( 255, 255, 255, .8 );
+			background: rgba( 0, 0, 0, 1 );
 			-webkit-transition: background 1s ease-in-out;
 			-moz-transition: background 1s ease-in-out;
 			-o-transition: background 1s ease-in-out;
@@ -132,13 +219,16 @@ body{
 			min-width: 1366px;
 			max-width: 1366px;
 
+			/*
 			&:hover{
-				background: rgba( 255, 255, 255, 1 );
+
+				background: rgba( 30, 30, 30, 1 );
 				-webkit-transition: background 1s ease-in-out;
 				-moz-transition: background 1s ease-in-out;
 				-o-transition: background 1s ease-in-out;
 				transition: background 1s ease-in-out;
-			}
+
+			} */
 
 			div{
 
@@ -158,6 +248,7 @@ body{
 
     				a{
 
+    					color: white;
     					border-bottom: 0 solid #363435;
 						-webkit-transition: all 0.3s ease-in-out;
 						-moz-transition: all 0.3s ease-in-out;
@@ -210,8 +301,9 @@ body{
 						input[type='text'], input[type='password']{
 
 							border: none;
+							color: white;
 							border-bottom-style: solid;
-    						border-bottom-color: black;
+    						border-bottom-color: white;
     						background: transparent;
     						transition: all 2s ease;
 						    -webkit-transition: all 2s ease;
@@ -946,7 +1038,7 @@ body{
 
 					&.containerwrap{
 
-						padding: 50px;
+						// padding: 50px;
 
 						div{
 

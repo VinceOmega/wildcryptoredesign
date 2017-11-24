@@ -1,10 +1,76 @@
+@charset "UTF-8";
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif !important; }
 
 body {
-  background: #111; }
+  background: #111 !important; }
+
+div iframe#launcher {
+  left: 0 !important; }
+div.socialbox {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  z-index: 100; }
+
+.carousel-item {
+  height: 500px;
+  position: relative;
+  display: none;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease,-webkit-transform .6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px; }
+  .carousel-item.active {
+    display: block; }
+  .carousel-item img {
+    height: 500px; }
+
+.carousel-control-prev {
+  left: 0; }
+
+.carousel-control-next {
+  right: 0; }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); }
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: .5; }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
+
+.carousel-prev-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
 
 #container {
   min-width: 1366px;
@@ -18,12 +84,36 @@ body {
     display: none; }
   #container a {
     text-decoration: none; }
-    #container a.button--facebook {
-      background: #3B5998;
-      color: white !important;
-      padding: 5px;
-      border: 1px solid #3B5998;
-      border-radius: 4px; }
+    #container a.button {
+      background: #BF1E2E;
+      border: 1px solid #808080;
+      border-radius: 8px;
+      color: white;
+      line-height: 1.6;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3 ease;
+      -o-transition: all 0.3 ease;
+      font-weight: 500;
+      cursor: pointer; }
+      #container a.button:hover {
+        background: white;
+        border: 1px solid #BF1E2E;
+        border-radius: 8px;
+        color: #111;
+        line-height: 1.6;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3 ease;
+        -o-transition: all 0.3 ease;
+        font-weight: 500;
+        cursor: pointer; }
+      #container a.button--facebook {
+        background: #3B5998;
+        color: white !important;
+        padding: 5px;
+        border: 1px solid #3B5998;
+        border-radius: 4px; }
     #container a img {
       border: 0; }
   #container ul li {
@@ -66,7 +156,7 @@ body {
     #container header a {
       color: #363435; }
     #container header nav {
-      background: rgba(255, 255, 255, 0.8);
+      background: black;
       -webkit-transition: background 1s ease-in-out;
       -moz-transition: background 1s ease-in-out;
       -o-transition: background 1s ease-in-out;
@@ -74,17 +164,22 @@ body {
       position: fixed;
       z-index: 100;
       min-width: 1366px;
-      max-width: 1366px; }
-      #container header nav:hover {
-        background: white;
-        -webkit-transition: background 1s ease-in-out;
-        -moz-transition: background 1s ease-in-out;
-        -o-transition: background 1s ease-in-out;
-        transition: background 1s ease-in-out; }
+      max-width: 1366px;
+      			/*
+      			&:hover{
+      
+      				background: rgba( 30, 30, 30, 1 );
+      				-webkit-transition: background 1s ease-in-out;
+      				-moz-transition: background 1s ease-in-out;
+      				-o-transition: background 1s ease-in-out;
+      				transition: background 1s ease-in-out;
+      
+      			} */ }
       #container header nav div.-content {
         margin: 0;
         padding: 0; }
         #container header nav div.-content a {
+          color: white;
           border-bottom: 0 solid #363435;
           -webkit-transition: all 0.3s ease-in-out;
           -moz-transition: all 0.3s ease-in-out;
@@ -108,8 +203,9 @@ body {
         padding: 0; }
         #container header nav div.-login form input[type='text'], #container header nav div.-login form input[type='password'] {
           border: none;
+          color: white;
           border-bottom-style: solid;
-          border-bottom-color: black;
+          border-bottom-color: white;
           background: transparent;
           transition: all 2s ease;
           -webkit-transition: all 2s ease;
@@ -137,15 +233,15 @@ body {
           border: 1px solid #808080;
           border-radius: 8px;
           display: inline-block;
-          color: #cdcdcd;
+          color: white;
           line-height: 1.6;
           transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
           -moz-transition: all 0.3 ease;
           -o-transition: all 0.3 ease;
           font-weight: 500;
-          width: 80px;
-          height: 30px;
+          width: 70px;
+          height: auto;
           cursor: hand; }
           #container header nav div.-login form input.-btn:hover {
             color: #111;
@@ -167,7 +263,8 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    background-image: url("/img/dark-triangles.png"); }
+    background-image: url("/themes/wild/img/curls.png");
+    background-repeat: repeat; }
     #container main section.-generic {
       padding: 50px; }
       #container main section.-generic a {
@@ -294,6 +391,30 @@ body {
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
         -o-transition: all .3s ease; }
+        #container main section div#accordion div.panel-default .panel-heading {
+          text-align: left;
+          border: none;
+          border-bottom: 1px solid black;
+          padding: 5px 0 5px 10px;
+          margin: 2px 0;
+          background-image: none;
+          background-color: white;
+          background-repeat: no-repeat;
+          transition: all .3s ease;
+          -webkit-transition: all .3s ease;
+          -moz-transition: all .3s ease;
+          -o-transition: all .3s ease; }
+          #container main section div#accordion div.panel-default .panel-heading:hover {
+            background: #BF1E2E;
+            color: white;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease; }
+          #container main section div#accordion div.panel-default .panel-heading h4 {
+            line-height: 2.2; }
+        #container main section div#accordion div.panel-default .panel-body {
+          padding: 20px 10px; }
         #container main section div#accordion div.panel-default:hover {
           background: #BF1E2E;
           color: white;
@@ -301,8 +422,6 @@ body {
           -webkit-transition: all .3s ease;
           -moz-transition: all .3s ease;
           -o-transition: all .3s ease; }
-        #container main section div#accordion div.panel-default .panel-body {
-          padding: 20px 10px; }
       #container main section div#accordion div.-info-box-header {
         border-bottom: 1px solid black; }
         #container main section div#accordion div.-info-box-header i, #container main section div#accordion div.-info-box-header h3 {
@@ -313,7 +432,7 @@ body {
           font-size: 30px; }
       #container main section div#accordion div.-cta a {
         padding: 15px 0 15px 10px; }
-      #container main section div#accordion a {
+      #container main section div#accordion div a {
         color: black;
         font-weight: 300;
         font-size: 20px;
@@ -321,21 +440,19 @@ body {
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
         -o-transition: all .3s ease; }
-        #container main section div#accordion a:hover {
+        #container main section div#accordion div a:hover {
           color: white;
           transition: all .3s ease;
           -webkit-transition: all .3s ease;
           -moz-transition: all .3s ease;
           -o-transition: all .3s ease; }
-      #container main section div#accordion .panel-heading {
-        text-align: left;
-        border-bottom: 1px solid black;
-        padding: 5px 0 5px 10px;
-        margin: 2px 0; }
-        #container main section div#accordion .panel-heading h4 {
-          line-height: 2.2; }
+        #container main section div#accordion div a.collapsed {
+          display: inline-block;
+          overflow: hidden; }
     #container main section div.cmsinput {
       padding: 50px; }
+    #container main section.-games h3 {
+      margin-left: 46px; }
     #container main section.-games div.-padded-15 {
       margin: 0;
       padding: 20px 0;
@@ -368,7 +485,8 @@ body {
           -o-transition: all .3s ease; }
     #container main section.-games ul {
       display: block;
-      margin: 0; }
+      margin: 0;
+      padding-left: 40px; }
       #container main section.-games ul li {
         display: inline-block;
         padding: 3px; }
@@ -435,6 +553,10 @@ body {
       width: 100%; }
       #container main section.focusarea div a {
         color: #111; }
+        #container main section.focusarea div a.button {
+          color: white; }
+          #container main section.focusarea div a.button:hover {
+            color: #111; }
         #container main section.focusarea div a:hover, #container main section.focusarea div a:active {
           color: #BF1E2E; }
       #container main section.focusarea div input, #container main section.focusarea div p, #container main section.focusarea div a, #container main section.focusarea div h3, #container main section.focusarea div label {
@@ -447,7 +569,7 @@ body {
         border: 1px solid #808080;
         border-radius: 8px;
         display: inline-block;
-        color: #cdcdcd;
+        color: white;
         line-height: 1.6;
         transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
@@ -455,7 +577,7 @@ body {
         -o-transition: all 0.3 ease;
         font-weight: 500;
         width: auto;
-        height: 30px;
+        height: auto;
         cursor: hand; }
         #container main section.focusarea div input[type='submit']:hover {
           background: white;
@@ -472,7 +594,7 @@ body {
       #container main section.focusarea div input[type='text'], #container main section.focusarea div input[type='password'], #container main section.focusarea div input[type='email'], #container main section.focusarea div input[type='tel'], #container main section.focusarea div select {
         width: 300px; }
       #container main section.focusarea div.containerwrap {
-        padding: 50px; }
+        color: black; }
   #container footer {
     background: #111;
     color: white;
@@ -481,7 +603,9 @@ body {
     #container footer div.div.-top.-left {
       min-width: 500px;
       display: inline-block;
-      width: 60%; }
+      width: 60%;
+      padding-left: 50px;
+      padding-bottom: 40px; }
       #container footer div.div.-top.-left ul {
         display: inline-block; }
         #container footer div.div.-top.-left ul.-container {
@@ -490,7 +614,8 @@ body {
         #container footer div.div.-top.-left ul li {
           display: block; }
           #container footer div.div.-top.-left ul li.-heading {
-            font-weight: 700; }
+            font-weight: 700;
+            margin-left: 20px; }
           #container footer div.div.-top.-left ul li ul {
             display: block;
             margin: 0;
@@ -501,7 +626,7 @@ body {
               #container footer div.div.-top.-left ul li ul li a {
                 color: white; }
                 #container footer div.div.-top.-left ul li ul li a:hover, #container footer div.div.-top.-left ul li ul li a:active {
-                  color: #BF1E2E; }
+                  color: #111; }
     #container footer div.div.-top.-right {
       min-width: 450px;
       display: inline-block;
@@ -575,5 +700,9 @@ body {
           -webkit-transition: all 0.3s ease;
           -moz-transition: all 0.3 ease;
           -o-transition: all 0.3 ease; }
+
+@media screen and (min-width: 750px) and (max-width: 990px) {
+  div.socialbox {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

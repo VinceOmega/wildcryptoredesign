@@ -1,11 +1,121 @@
 html, body{ 
 	margin: 0;
 	padding: 0;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif !important;
 }
 
 body{
-	background: #111;
+	background: #111 !important;
+}
+
+div{
+
+	iframe{
+
+		&#launcher{
+
+			left: 0 !important;
+
+		}
+
+	}
+
+	&.socialbox{
+
+		position: fixed;
+    	right: 0;
+    	top: 100px;
+    	z-index: 100;
+
+	}
+
+}
+
+.carousel-item{
+
+	height: 500px;
+    position: relative;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+
+    &.active{
+
+    	display: block;
+
+    }
+
+    img{
+
+    	height: 500px;
+
+    }
+
+}
+
+.carousel-control-prev {
+
+    left: 0;
+
+}
+
+.carousel-control-next {
+
+    right: 0;
+
+}
+
+.carousel-control-next-icon {
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+}
+
+.carousel-control-prev-icon{
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+
+}
+
+.carousel-prev-icon{
+
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+
+}
+
+.img-fluid{
+
+	max-width: 100%;
+    height: auto;
+
 }
 
 #container{
@@ -32,6 +142,34 @@ body{
 		text-decoration: none;
 
 		&.button{
+
+			background: #BF1E2E;
+		    border: 1px solid #808080;
+		    border-radius: 8px;
+		    color: white;
+		    line-height: 1.6;
+		    transition: all 0.3s ease;
+		    -webkit-transition: all 0.3s ease;
+		    -moz-transition: all 0.3 ease;
+		    -o-transition: all 0.3 ease;
+		    font-weight: 500;
+		    cursor: pointer;
+
+		    &:hover{
+
+				background: white;
+			    border: 1px solid #BF1E2E;
+			    border-radius: 8px;
+			    color: #111;
+			    line-height: 1.6;
+			    transition: all 0.3s ease;
+			    -webkit-transition: all 0.3s ease;
+			    -moz-transition: all 0.3 ease;
+			    -o-transition: all 0.3 ease;
+			    font-weight: 500;
+			    cursor: pointer;
+
+		    }
 
 			&--facebook{
 
@@ -122,7 +260,7 @@ body{
 
 		nav{
 
-			background: rgba( 255, 255, 255, .8 );
+			background: rgba( 0, 0, 0, 1 );
 			-webkit-transition: background 1s ease-in-out;
 			-moz-transition: background 1s ease-in-out;
 			-o-transition: background 1s ease-in-out;
@@ -132,13 +270,16 @@ body{
 			min-width: 1366px;
 			max-width: 1366px;
 
+			/*
 			&:hover{
-				background: rgba( 255, 255, 255, 1 );
+
+				background: rgba( 30, 30, 30, 1 );
 				-webkit-transition: background 1s ease-in-out;
 				-moz-transition: background 1s ease-in-out;
 				-o-transition: background 1s ease-in-out;
 				transition: background 1s ease-in-out;
-			}
+
+			} */
 
 			div{
 
@@ -158,6 +299,7 @@ body{
 
     				a{
 
+    					color: white;
     					border-bottom: 0 solid #363435;
 						-webkit-transition: all 0.3s ease-in-out;
 						-moz-transition: all 0.3s ease-in-out;
@@ -210,8 +352,9 @@ body{
 						input[type='text'], input[type='password']{
 
 							border: none;
+							color: white;
 							border-bottom-style: solid;
-    						border-bottom-color: black;
+    						border-bottom-color: white;
     						background: transparent;
     						transition: all 2s ease;
 						    -webkit-transition: all 2s ease;
@@ -250,15 +393,15 @@ body{
 						    border: 1px solid #808080;
 						    border-radius: 8px;
 						    display: inline-block;
-						    color: #cdcdcd;
+						    color: white;
 						    line-height: 1.6;
 						    transition: all 0.3s ease;
 						    -webkit-transition: all 0.3s ease;
 						    -moz-transition: all 0.3 ease;
 						    -o-transition: all 0.3 ease;
 						    font-weight: 500;
-						    width: 80px;
-						    height: 30px;
+						    width: 70px;
+						    height: auto;
 			    			cursor: hand;
 
 
@@ -317,7 +460,9 @@ body{
 		color: white;
 		margin: 0;
 		padding: 0;
-		background-image: url('/img/dark-triangles.png');
+		// background-image: url('/img/curls.png');
+		background-image: url('/themes/wild/img/curls.png');
+		background-repeat: repeat;
 
 		section{
 
@@ -546,6 +691,47 @@ body{
 							-moz-transition: all .3s ease;
 							-o-transition: all .3s ease;
 
+				    		.panel-heading{
+
+						    	text-align: left;
+						    	border: none;
+						    	border-bottom: 1px solid black;
+						    	padding: 5px 0 5px 10px;
+						    	margin: 2px 0;
+						    	background-image: none;
+						    	background-color: white;
+						    	background-repeat: no-repeat;
+						    	transition: all .3s ease;
+								-webkit-transition: all .3s ease;
+								-moz-transition: all .3s ease;
+								-o-transition: all .3s ease;
+
+						    	&:hover{
+
+					    			background: #BF1E2E;
+					    			color: white;
+					    			transition: all .3s ease;
+									-webkit-transition: all .3s ease;
+									-moz-transition: all .3s ease;
+									-o-transition: all .3s ease;
+
+				    			}
+
+
+						    	h4{
+
+						    		line-height: 2.2;
+						    	}
+
+
+						    }
+
+				    		.panel-body{
+
+				    			padding: 20px 10px;
+
+				    		}
+
 				    		&:hover{
 
 				    			background: #BF1E2E;
@@ -555,15 +741,11 @@ body{
 								-moz-transition: all .3s ease;
 								-o-transition: all .3s ease;
 
-				    		}
-
-				    		.panel-body{
-
-				    			padding: 20px 10px;
-
-				    		}
+			    			}
 
 				    	}
+
+
 
 				    	&.-info-box-header{
 
@@ -601,44 +783,40 @@ body{
 				    		
 				    	}
 
-				    }
+				    	a{
 
-				    a{
-
-				    	color: black;
-				    	font-weight: 300;
-				    	font-size: 20px;
-						transition: all .3s ease;
-						-webkit-transition: all .3s ease;
-						-moz-transition: all .3s ease;
-						-o-transition: all .3s ease;
-
-				    	&:hover{
-
-				    		color: white;
-				    		transition: all .3s ease;
+					    	color: black;
+					    	font-weight: 300;
+					    	font-size: 20px;
+							transition: all .3s ease;
 							-webkit-transition: all .3s ease;
 							-moz-transition: all .3s ease;
 							-o-transition: all .3s ease;
 
-				    	}
+					    	&:hover{
+
+					    		color: white;
+					    		transition: all .3s ease;
+								-webkit-transition: all .3s ease;
+								-moz-transition: all .3s ease;
+								-o-transition: all .3s ease;
+
+					    	}
+
+					    	&.collapsed{
+
+								display: inline-block;
+								overflow: hidden;
+
+							}
+
+					    }
 
 				    }
 
-				    .panel-heading{
-
-				    	text-align: left;
-				    	border-bottom: 1px solid black;
-				    	padding: 5px 0 5px 10px;
-				    	margin: 2px 0;
-
-				    	h4{
-
-				    		line-height: 2.2;
-				    	}
 
 
-				    }
+
 
 				}
 
@@ -651,6 +829,12 @@ body{
 			}
 
 			&.-games{
+
+				h3{
+
+					margin-left: 46px;
+
+				}
 
 				div{
 
@@ -705,6 +889,7 @@ body{
 				ul{
 					display: block;
 					margin: 0;
+					padding-left: 40px;
 
 
 					li{
@@ -844,6 +1029,19 @@ body{
 
 						color: #111;
 
+						&.button{
+
+							color: white;
+
+							&:hover{
+
+								color: #111;
+
+							}
+
+
+						}
+
 						&:hover, &:active{
 
 							color:#BF1E2E;
@@ -871,7 +1069,7 @@ body{
 					    border: 1px solid #808080;
 					    border-radius: 8px;
 					    display: inline-block;
-					    color: #cdcdcd;
+					    color: white;
 					    line-height: 1.6;
 					    transition: all 0.3s ease;
 					    -webkit-transition: all 0.3s ease;
@@ -879,7 +1077,7 @@ body{
 					    -o-transition: all 0.3 ease;
 					    font-weight: 500;
 					    width: auto;
-					    height: 30px;
+					    height: auto;
 					    cursor: hand;
 
 					    &:hover{
@@ -911,7 +1109,7 @@ body{
 
 					&.containerwrap{
 
-						padding: 50px;
+						color: black;
 
 						div{
 
@@ -947,7 +1145,8 @@ body{
 				min-width: 500px;
 				display: inline-block;
 				width: 60%;
-				// max-width: 100%;
+    			padding-left: 50px;
+    			padding-bottom: 40px;
 
 				ul{
 
@@ -964,9 +1163,11 @@ body{
 
 						display: block;
 
+
 						&.-heading{
 
 							font-weight: 700;
+							margin-left: 20px;
 
 						}
 
@@ -988,7 +1189,7 @@ body{
 
 					    			&:hover, &:active{
 
-					    				color: #BF1E2E
+					    				color: #111
 
 					    			}
 
@@ -1157,4 +1358,16 @@ body{
 	}
 }
 
+@media screen and (min-width: 750px) and (max-width: 990px){
 
+	div{
+
+		&.socialbox{
+
+			display: none;
+			
+		}
+
+	}
+
+}

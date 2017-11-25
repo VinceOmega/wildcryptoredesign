@@ -16,6 +16,12 @@ function Accordion(){
 
 }
 
+function Carousel(){
+
+    $('.carousel').carousel();
+
+}
+
 function scrollToTop(){
 
 	$("#jumptotop a").click(function() {

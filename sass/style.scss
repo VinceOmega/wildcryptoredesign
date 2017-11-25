@@ -5,7 +5,25 @@ html, body{
 }
 
 body{
-	background: #111 !important;
+	&.root{
+	
+		background: black !important;
+
+	}
+}
+
+iframe{
+
+	&.zEWidget{
+
+		&-launcher{
+
+			left: 0 !important;
+
+		}
+
+	}
+
 }
 
 .carousel-item{
@@ -32,7 +50,7 @@ body{
 
     img{
 
-    	height: 500px;
+    	height: 500px !important;
 
     }
 
@@ -97,11 +115,10 @@ body{
 
 #container{
 
-	min-width: 1366px;
 	max-width: 1366px;
 	margin: 0 auto;
 	padding: 0;
-	background: #1B1718;
+	background: black;
 
 	.-hide{
 
@@ -127,8 +144,49 @@ body{
     			padding: 5px;
     			border: 1px solid #3B5998;
     			border-radius: 4px;
+			    transition: all 0.3s ease;
+			    -webkit-transition: all 0.3s ease;
+			    -moz-transition: all 0.3 ease;
+			    -o-transition: all 0.3 ease;
 
 			}
+
+			background: #BF1E2E;
+		    border: 1px solid #808080;
+		    border-radius: 8px;
+		    display: inline-block;
+		    color: white;
+		    transition: all 0.3s ease;
+		    -webkit-transition: all 0.3s ease;
+		    -moz-transition: all 0.3 ease;
+		    -o-transition: all 0.3 ease;
+		    font-weight: 500;
+		    width: auto;
+		    height: auto;
+			cursor: pointer;
+
+
+		    &:hover{
+
+		    	color: #111;
+		    	background: #FEFEFE;
+		    	border: 1px solid #BF1E2E;
+			    transition: all 0.3s ease;
+			    -webkit-transition: all 0.3s ease;
+			    -moz-transition: all 0.3 ease;
+			    -o-transition: all 0.3 ease;
+
+		    }
+
+		    &--facebook:hover{
+
+    				background: #476fc1;
+				    transition: all 0.3s ease;
+				    -webkit-transition: all 0.3s ease;
+				    -moz-transition: all 0.3 ease;
+				    -o-transition: all 0.3 ease;
+
+    		}
 
 		}
 
@@ -146,7 +204,53 @@ body{
 			text-decoration: none;
 			list-style: none;
 
+			&.etabs{
+
+				&__tabs{
+
+					&__tab{
+
+						background: none;
+						background-color: none;
+
+
+						&.active{
+
+							background: none;
+							background-color: none;
+
+						}
+
+						a{
+							
+							background: #BF1E2E;
+							transition: all 0.3s ease;
+							border-radius: 8px;
+					   		-webkit-transition: all 0.3s ease;
+					   		-moz-transition: all 0.3 ease;
+					   		-o-transition: all 0.3 ease;
+
+							&:hover{
+
+								background: white;
+								color: #111;
+								transition: all 0.3s ease;
+					   			-webkit-transition: all 0.3s ease;
+					   			-moz-transition: all 0.3 ease;
+					   			-o-transition: all 0.3 ease;
+
+							}
+
+						}
+						
+					}
+				}
+
+			}
+
 		}
+
+
 		
 	}
 
@@ -157,16 +261,28 @@ body{
 		    border: none;
 		    border-bottom-style: solid;
 		    border-bottom-color: black;
+		    color: black;
 		    background: transparent;
 		    transition: all 2s ease;
 		    -webkit-transition: all 2s ease;
 		    -moz-transition: all 2s ease;
 		    -o-transition: all 2s ease;
 
+		    &.field{
+
+		    	color: black;
+
+		    	&:hover{
+
+		    		color: white;
+		    	}
+
+		    }
+
 			&:active{
 
 				border-bottom-style: solid;
-				border-bottom-color: #BF1E2E;
+				border-bottom-color: white;
 				background: transparent;
 				transition: all 2s ease;
 			    -webkit-transition: all 2s ease;
@@ -176,9 +292,9 @@ body{
 
 			&:hover{
 
-				color: #BF1E2E;
+				color: white;
 				border-bottom-style: dashed;
-				border-bottom-color: #BF1E2E;
+				border-bottom-color: white;
 				background: transparent;
 				transition: all 0.3s ease;
 			    -webkit-transition: all 0.3s ease;
@@ -189,21 +305,61 @@ body{
 
 		}
 
+		input{
+
+			&.action.button{
+
+				background: #BF1E2E;
+			    border: 1px solid #808080;
+			    border-radius: 8px;
+			    display: inline-block;
+			    color: white;
+			    transition: all 0.3s ease;
+			    -webkit-transition: all 0.3s ease;
+			    -moz-transition: all 0.3 ease;
+			    -o-transition: all 0.3 ease;
+			    font-weight: 500;
+			    width: auto;
+			    height: auto;
+				cursor: pointer;
+
+
+			    &:hover{
+
+			    	color: #111;
+			    	background: #FEFEFE;
+			    	border: 1px solid #BF1E2E;
+				    transition: all 0.3s ease;
+				    -webkit-transition: all 0.3s ease;
+				    -moz-transition: all 0.3 ease;
+				    -o-transition: all 0.3 ease;
+
+			    }
+			}
+
+		}
+
 	}
 
 	header{
 
 		margin: 0;
 		padding: 0;
-		width: auto;
 		min-height: 96.5px;
 		font-weight: 300;
-		min-width: 1366px;
 		max-width: 1366px;
 
 		a{
 
 			color: #363435;
+
+			&.-signup{
+
+				font-size: 15px;
+				width: auto;
+				height: auto;
+
+			}
 
 		}
 
@@ -216,7 +372,6 @@ body{
 			transition: background 1s ease-in-out;
 			position: fixed;
 			z-index: 100;
-			min-width: 1366px;
 			max-width: 1366px;
 
 			/*
@@ -245,6 +400,7 @@ body{
 
 					margin: 0;
     				padding: 0;
+    				text-align: center;
 
     				a{
 
@@ -273,6 +429,8 @@ body{
 
 					margin: 0;
 					padding: 0;
+					text-align: center;
+
 				}
 
 
@@ -295,6 +453,7 @@ body{
 
 					margin: 25px 0;
 					padding: 0;
+					text-align: center;
 
 					form{
 
@@ -342,8 +501,7 @@ body{
 						    border: 1px solid #808080;
 						    border-radius: 8px;
 						    display: inline-block;
-						    color: #cdcdcd;
-						    line-height: 1.6;
+						    color: white;
 						    transition: all 0.3s ease;
 						    -webkit-transition: all 0.3s ease;
 						    -moz-transition: all 0.3 ease;
@@ -351,7 +509,7 @@ body{
 						    font-weight: 500;
 						    width: 80px;
 						    height: 30px;
-			    			cursor: hand;
+			    			cursor: pointer;
 
 
 						    &:hover{
@@ -463,10 +621,38 @@ body{
 			&.drawbox{
 
 				display: block;
-				width: 100%;
-				margin: 15px 50px;
+				width: auto;
+				margin: 15px auto;
 
 				div{
+
+					&.hidden-xs{
+
+						position: relative;
+						margin-right: 25px;
+						width: 155px;
+						display: inline-block;
+
+					}
+
+					&.drawbox{
+
+						&__content{
+
+						    padding: 5px 15px;
+						    line-height: 26px;
+						    display: inline-block;
+						    width: auto;
+						    color: black;
+
+						}
+
+					}
+
+					&.containerwrap{
+
+						display: inline-block;
+					}
 
 					&.notification{
 
@@ -763,10 +949,6 @@ body{
 
 				    }
 
-
-
-
-
 				}
 
 				&.cmsinput{
@@ -775,9 +957,127 @@ body{
 
 				}
 
+				&.account{
+
+					div{
+
+						border-radius: 8px;
+
+					}
+
+					&__section{
+
+						background: black;
+
+						&.box{
+
+							background: black;
+
+						}
+
+					}
+
+					&__header{
+
+						color: white;
+
+					}
+
+					&__content{
+
+						color: black;
+						background: #BF1E2E;
+
+						.cmsinput{
+
+							h1, h2, h3, h4, h5, h6{
+								color: black;
+							}
+
+							color: white;
+
+						}
+
+						.funds{
+
+							&__title{
+
+								color: white;
+							}
+
+						}
+
+						div{
+
+							&.dataTables{
+
+								&_info{
+
+									color: white;
+
+								}
+
+								&_paginate{
+
+									a{
+
+										color: white !important;
+										cursor: pointer;
+
+										&:hover{
+
+											color: black !important;
+
+										}
+
+									}
+
+								}
+
+							}
+
+						}
+
+						h2{
+
+							&.account__name{
+
+								color: white;
+
+							}
+
+						}
+
+						h3{
+
+							&.account__fieldname{
+
+								color: black;
+							}
+
+						}
+
+						p, address{
+
+							&.account__fields{
+
+								color: white !important;
+
+							}
+
+						}
+
+					}
+
+
+
+				}
+
 			}
 
 			&.-games{
+
+				margin-bottom: 20px;
 
 				div{
 
@@ -832,6 +1132,7 @@ body{
 				ul{
 					display: block;
 					margin: 0;
+					padding-left: 40px;
 
 
 					li{
@@ -998,7 +1299,7 @@ body{
 					    border: 1px solid #808080;
 					    border-radius: 8px;
 					    display: inline-block;
-					    color: #cdcdcd;
+					    color: white;
 					    line-height: 1.6;
 					    transition: all 0.3s ease;
 					    -webkit-transition: all 0.3s ease;
@@ -1006,8 +1307,8 @@ body{
 					    -o-transition: all 0.3 ease;
 					    font-weight: 500;
 					    width: auto;
-					    height: 30px;
-					    cursor: hand;
+					    height: auto;
+					    cursor: pointer;
 
 					    &:hover{
 
@@ -1026,7 +1327,145 @@ body{
 
 						background: #BF1E2E;
 						padding: 20px 0;
-						color: white;
+						color: black;
+
+						&.game{
+
+							background: transparent;
+
+							div{
+
+								&.cmsinput{
+
+									background: white;
+									color: black;
+									border-radius: 8px;
+
+									h3{
+
+										color: black;
+									}
+
+									div{
+
+										&.focusarea{
+
+											&__ctacontainer{
+
+
+
+											}
+
+										}
+
+									}
+								}
+
+							}
+						}
+
+						form{
+
+							input[type='text'], input[type='password'], input[type='tel'], input[type='email']{
+
+							    border: none;
+							    border-bottom-style: solid;
+							    border-bottom-color: black;
+							    background: transparent;
+							    transition: all 2s ease;
+							    -webkit-transition: all 2s ease;
+							    -moz-transition: all 2s ease;
+							    -o-transition: all 2s ease;
+
+								&:active{
+
+									border-bottom-style: solid;
+									border-bottom-color: white;
+									background: transparent;
+									transition: all 2s ease;
+								    -webkit-transition: all 2s ease;
+								    -moz-transition: all 2s ease;
+								    -o-transition: all 2s ease;
+								}
+
+								&:hover{
+
+									color: white;
+									border-bottom-style: dashed;
+									border-bottom-color: white;
+									background: transparent;
+									transition: all 0.3s ease;
+								    -webkit-transition: all 0.3s ease;
+								    -moz-transition: all 0.3 ease;
+								    -o-transition: all 0.3 ease;
+
+								}
+
+							}
+
+							a{
+
+								&.form{
+
+									&__fieldholdertext{
+
+										color: black;
+
+									}
+
+									&__fieldholdertext:hover{
+
+										color: white;
+									}
+
+								}
+
+								&.button{
+
+									color: white;
+									transition: all 0.3s ease;
+									-webkit-transition: all 0.3s ease;
+			   						-moz-transition: all 0.3 ease;
+			   						-o-transition: all 0.3 ease;
+
+									&:hover{
+
+										color: black;
+										transition: all 0.3s ease;
+										-webkit-transition: all 0.3s ease;
+			   							-moz-transition: all 0.3 ease;
+			   							-o-transition: all 0.3 ease;
+
+									}
+									
+
+								}
+
+							}
+						}
+
+						a{
+
+							&.button{
+
+								color: white;
+								transition: all 0.3s ease;
+								-webkit-transition: all 0.3s ease;
+		   						-moz-transition: all 0.3 ease;
+		   						-o-transition: all 0.3 ease;
+
+								&:hover{
+
+									color: black;
+									transition: all 0.3s ease;
+									-webkit-transition: all 0.3s ease;
+		   							-moz-transition: all 0.3 ease;
+		   							-o-transition: all 0.3 ease;
+
+								}		
+
+							}
+						}
 
 					}
 
@@ -1057,6 +1496,146 @@ body{
 
 		}
 
+		div{
+
+			&.account{
+
+				&__content{
+
+					background: #BF1E2E;
+
+					h2{
+
+						color: black;
+					}
+
+					color: white;
+
+					div{
+
+						&.dataTables{
+
+							&_info{
+
+								color: white;
+
+							}
+
+							&_paginate{
+
+								a{
+
+									color: white !important;
+									cursor: pointer;
+
+									&:hover{
+
+										color: black !important;
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+				
+				&__section{
+
+					background: black;
+				}
+
+			}
+
+			&.pageheader {
+
+				&.primarycolour{
+
+					background: #BF1E2E;
+
+				}
+
+			}
+
+			&.cmsinput{
+
+				&--faint{
+
+					padding: 50px;
+
+					a{
+
+						color: #BF1E2E;
+
+						&:hover{
+
+							color: #f2374a;
+
+						}
+
+
+
+					}
+
+				}
+
+				table{
+
+					margin: 20px auto;
+					text-align: center;
+					width: 100%;
+					border-collapse: collapse;
+
+					thead{
+
+						background: #BF1E2E;
+						color: white;
+
+						td{
+
+							color: black;
+							background-color: #BF1E2E;
+						}
+
+					}
+
+					tbody{
+
+						background: white;
+						color: #111;
+
+					}
+
+					th{
+
+						vertical-align: center;
+
+					}
+
+					td{
+
+						border-bottom: 2px solid black;
+						padding: 10px;
+						vertical-align: center;
+
+					}
+
+				}
+
+			}
+
+			&.containerwrap{
+
+				margin: 0 0 20px 0;
+
+			}
+
+		}
+
 	}
 
 
@@ -1066,6 +1645,7 @@ body{
 		color: white;
 	    padding: 20px 0;
 	    margin: 0 0 0 0;
+	    max-width: 1366px;
 
 		div{
 
@@ -1074,6 +1654,7 @@ body{
 				min-width: 500px;
 				display: inline-block;
 				width: 60%;
+				margin: 40px 20px;
 				// max-width: 100%;
 
 				ul{
@@ -1084,6 +1665,7 @@ body{
 
 						top: 0;
 						position: relative;
+						margin: 0 40px 0 0;
 
 					}
 
@@ -1181,6 +1763,8 @@ body{
 
 			&.div.-bottom.-fullwidth{
 
+				margin: 20px auto;
+
 				ul{
 
 					display: block;
@@ -1209,6 +1793,13 @@ body{
 				}
 
 			}
+
+			&.div.-copyright{
+
+				margin-top: 20px;
+
+			}
+
 		}
 	}
 
@@ -1284,4 +1875,49 @@ body{
 	}
 }
 
+
+@media (max-width: 960px){
+
+	#container{
+
+		header{
+    		height: 278px;
+    		width: 100%;
+
+    	}
+
+    	main{
+
+    		section{
+
+    			&.jumbotron{
+
+    				background: black;
+
+    				div{
+
+		    			&.carousel-item{
+
+		    				height: auto !important;
+
+		    				img{
+
+		    					height: auto !important;
+
+		    				}
+		    				
+		    			}
+
+		    		}
+
+    			}
+    		}
+
+    	}
+
+
+
+	}
+
+}
 

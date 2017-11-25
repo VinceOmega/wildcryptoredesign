@@ -16,11 +16,6 @@ function Accordion(){
 
 }
 
-function Carousel(){
-
-    $('.carousel').carousel();
-
-}
 
 function scrollToTop(){
 

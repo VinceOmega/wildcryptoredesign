@@ -12,15 +12,24 @@ body{
 	}
 }
 
-iframe{
+div{
 
-	&.zEWidget{
+	iframe{
 
-		&-launcher{
+		&#launcher{
 
 			left: 0 !important;
 
 		}
+
+	}
+
+	&.socialbox{
+
+		position: fixed;
+    	right: 0;
+    	top: 100px;
+    	z-index: 100;
 
 	}
 
@@ -136,6 +145,34 @@ iframe{
 		text-decoration: none;
 
 		&.button{
+
+			background: #BF1E2E;
+		    border: 1px solid #808080;
+		    border-radius: 8px;
+		    color: white;
+		    line-height: 1.6;
+		    transition: all 0.3s ease;
+		    -webkit-transition: all 0.3s ease;
+		    -moz-transition: all 0.3 ease;
+		    -o-transition: all 0.3 ease;
+		    font-weight: 500;
+		    cursor: pointer;
+
+		    &:hover{
+
+				background: white;
+			    border: 1px solid #BF1E2E;
+			    border-radius: 8px;
+			    color: #111;
+			    line-height: 1.6;
+			    transition: all 0.3s ease;
+			    -webkit-transition: all 0.3s ease;
+			    -moz-transition: all 0.3 ease;
+			    -o-transition: all 0.3 ease;
+			    font-weight: 500;
+			    cursor: pointer;
+
+		    }
 
 			&--facebook{
 
@@ -345,9 +382,10 @@ iframe{
 
 		margin: 0;
 		padding: 0;
-		min-height: 96.5px;
+		min-height: 95px;
 		font-weight: 300;
 		max-width: 1366px;
+		background: black;
 
 		a{
 
@@ -507,8 +545,8 @@ iframe{
 						    -moz-transition: all 0.3 ease;
 						    -o-transition: all 0.3 ease;
 						    font-weight: 500;
-						    width: 80px;
-						    height: 30px;
+						    width: 70px;
+						    height: auto;
 			    			cursor: pointer;
 
 
@@ -1079,6 +1117,12 @@ iframe{
 
 				margin-bottom: 20px;
 
+				h3{
+
+					margin-left: 46px;
+
+				}
+
 				div{
 
 					&.-padded-15{
@@ -1271,6 +1315,19 @@ iframe{
 					a{
 
 						color: #111;
+
+						&.button{
+
+							color: white;
+
+							&:hover{
+
+								color: #111;
+
+							}
+
+
+						}
 
 						&:hover, &:active{
 
@@ -1477,7 +1534,7 @@ iframe{
 
 					&.containerwrap{
 
-						// padding: 50px;
+						color: black;
 
 						div{
 
@@ -1673,9 +1730,11 @@ iframe{
 
 						display: block;
 
+
 						&.-heading{
 
 							font-weight: 700;
+							margin-left: 20px;
 
 						}
 
@@ -1697,7 +1756,7 @@ iframe{
 
 					    			&:hover, &:active{
 
-					    				color: #BF1E2E
+					    				color: #111
 
 					    			}
 
@@ -1875,7 +1934,6 @@ iframe{
 	}
 }
 
-
 @media (max-width: 960px){
 
 	#container{
@@ -1883,6 +1941,12 @@ iframe{
 		header{
     		height: 278px;
     		width: 100%;
+
+    	}
+
+    	.socialbox{
+
+    		display: none;
 
     	}
 

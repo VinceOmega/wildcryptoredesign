@@ -124,7 +124,7 @@ div{
 
 #container{
 
-	max-width: 1366px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 	background: black;
@@ -148,15 +148,15 @@ div{
 
 			background: #BF1E2E;
 		    border: 1px solid #808080;
-		    border-radius: 8px;
+		    border-radius: 20px;
 		    color: white;
-		    line-height: 1.6;
 		    transition: all 0.3s ease;
 		    -webkit-transition: all 0.3s ease;
 		    -moz-transition: all 0.3 ease;
 		    -o-transition: all 0.3 ease;
 		    font-weight: 500;
 		    cursor: pointer;
+
 
 		    &:hover{
 
@@ -378,13 +378,26 @@ div{
 
 	}
 
+	section{
+
+		&.jumbotron{
+
+			height: auto;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			border-radius: 0;
+
+		}
+	}
+
 	header{
 
 		margin: 0;
 		padding: 0;
 		min-height: 95px;
 		font-weight: 300;
-		max-width: 1366px;
+		width: 100%;
 		background: black;
 
 		a{
@@ -410,7 +423,10 @@ div{
 			transition: background 1s ease-in-out;
 			position: fixed;
 			z-index: 100;
-			max-width: 1366px;
+			width: 100%;
+			-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+			box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
 
 			/*
 			&:hover{
@@ -537,7 +553,7 @@ div{
 
 						    background: #BF1E2E;
 						    border: 1px solid #808080;
-						    border-radius: 8px;
+						    border-radius: 13px;
 						    display: inline-block;
 						    color: white;
 						    transition: all 0.3s ease;
@@ -545,9 +561,10 @@ div{
 						    -moz-transition: all 0.3 ease;
 						    -o-transition: all 0.3 ease;
 						    font-weight: 500;
-						    width: 70px;
+						    width: auto;
 						    height: auto;
 			    			cursor: pointer;
+			    			padding: 0.15em 1.25em;
 
 
 						    &:hover{
@@ -599,15 +616,15 @@ div{
 	}
 
 
-
 	main{
 
 		color: white;
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
 		// background-image: url('/img/curls.png');
 		background-image: url('/themes/wild/img/curls.png');
 		background-repeat: repeat;
+		max-width: 1366px;
 
 		section{
 
@@ -628,15 +645,6 @@ div{
 				}
 			}
 
-			&.jumbotron{
-
-				height: auto;
-				width: auto;
-				margin: 0;
-				padding: 0;
-				border-radius: 0;
-
-			}
 
 			&.-results{
 
@@ -1700,8 +1708,8 @@ div{
 
 		background: #111;
 		color: white;
-	    padding: 20px 0;
-	    margin: 0 0 0 0;
+	    padding: 0;
+	    margin: 0 auto;
 	    max-width: 1366px;
 
 		div{
@@ -1950,36 +1958,31 @@ div{
 
     	}
 
-    	main{
 
-    		section{
+		section{
 
-    			&.jumbotron{
+			&.jumbotron{
 
-    				background: black;
+				background: black;
 
-    				div{
+				div{
 
-		    			&.carousel-item{
+	    			&.carousel-item{
 
-		    				height: auto !important;
+	    				height: auto !important;
 
-		    				img{
+	    				img{
 
-		    					height: auto !important;
+	    					height: auto !important;
 
-		    				}
-		    				
-		    			}
+	    				}
+	    				
+	    			}
 
-		    		}
+	    		}
 
-    			}
-    		}
-
-    	}
-
-
+			}
+		}
 
 	}
 

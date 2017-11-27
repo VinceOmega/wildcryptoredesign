@@ -73,7 +73,7 @@ div.socialbox {
   height: auto; }
 
 #container {
-  max-width: 1366px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   background: black; }
@@ -86,9 +86,8 @@ div.socialbox {
     #container a.button {
       background: #BF1E2E;
       border: 1px solid #808080;
-      border-radius: 8px;
+      border-radius: 20px;
       color: white;
-      line-height: 1.6;
       transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3 ease;
@@ -222,12 +221,18 @@ div.socialbox {
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3 ease;
       -o-transition: all 0.3 ease; }
+  #container section.jumbotron {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0; }
   #container header {
     margin: 0;
     padding: 0;
     min-height: 95px;
     font-weight: 300;
-    max-width: 1366px;
+    width: 100%;
     background: black; }
     #container header a {
       color: #363435; }
@@ -243,7 +248,10 @@ div.socialbox {
       transition: background 1s ease-in-out;
       position: fixed;
       z-index: 100;
-      max-width: 1366px;
+      width: 100%;
+      -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
       			/*
       			&:hover{
       
@@ -313,7 +321,7 @@ div.socialbox {
         #container header nav div.-login form input.-btn {
           background: #BF1E2E;
           border: 1px solid #808080;
-          border-radius: 8px;
+          border-radius: 13px;
           display: inline-block;
           color: white;
           transition: all 0.3s ease;
@@ -321,9 +329,10 @@ div.socialbox {
           -moz-transition: all 0.3 ease;
           -o-transition: all 0.3 ease;
           font-weight: 500;
-          width: 70px;
+          width: auto;
           height: auto;
-          cursor: pointer; }
+          cursor: pointer;
+          padding: 0.15em 1.25em; }
           #container header nav div.-login form input.-btn:hover {
             color: #111;
             background: #FEFEFE;
@@ -342,22 +351,17 @@ div.socialbox {
           left: -40px; }
   #container main {
     color: white;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-image: url("/themes/wild/img/curls.png");
-    background-repeat: repeat; }
+    background-repeat: repeat;
+    max-width: 1366px; }
     #container main section.-generic {
       padding: 50px; }
       #container main section.-generic a {
         color: white; }
         #container main section.-generic a:hover, #container main section.-generic a:active {
           color: #BF1E2E; }
-    #container main section.jumbotron {
-      height: auto;
-      width: auto;
-      margin: 0;
-      padding: 0;
-      border-radius: 0; }
     #container main section.-results div.drawbox {
       background: white;
       color: #111;
@@ -830,8 +834,8 @@ div.socialbox {
   #container footer {
     background: #111;
     color: white;
-    padding: 20px 0;
-    margin: 0 0 0 0;
+    padding: 0;
+    margin: 0 auto;
     max-width: 1366px; }
     #container footer div.div.-top.-left {
       min-width: 500px;
@@ -944,11 +948,11 @@ div.socialbox {
     width: 100%; }
   #container .socialbox {
     display: none; }
-  #container main section.jumbotron {
+  #container section.jumbotron {
     background: black; }
-    #container main section.jumbotron div.carousel-item {
+    #container section.jumbotron div.carousel-item {
       height: auto !important; }
-      #container main section.jumbotron div.carousel-item img {
+      #container section.jumbotron div.carousel-item img {
         height: auto !important; } }
 
 /*# sourceMappingURL=style.css.map */

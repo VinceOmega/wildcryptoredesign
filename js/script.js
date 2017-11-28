@@ -23,6 +23,7 @@ function scrollToTop(){
 		$('html, body').animate({
 			scrollTop : $("#container").offset().top - 100
 		}, 1000);
+        return false;
 	});
 }
 

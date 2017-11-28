@@ -1,7 +1,7 @@
 html, body{ 
 	margin: 0;
 	padding: 0;
-	font-family: 'Oswald', sans-serif !important;
+	font-family: 'Open Sans', sans-serif !important;
 }
 
 body{
@@ -451,7 +451,6 @@ div{
 
 			&.-signup{
 
-				font-size: 15px;
 				width: auto;
 				height: auto;
 
@@ -541,6 +540,7 @@ div{
 
 							display: inline-block;
     						margin: 0 25px;
+    						font-size: 12px;
 
 						}
 
@@ -1172,7 +1172,7 @@ div{
 
 				h3{
 
-				 	margin-left: 133px;
+				 	margin-left: 138px;
 
 				}
 
@@ -1817,7 +1817,7 @@ div{
 
 					    			&:hover, &:active{
 
-					    				color: #111
+					    				color: #BF1E2E
 
 					    			}
 
@@ -2007,6 +2007,34 @@ div{
 		header{
     		height: 278px;
     		width: 100%;
+
+			a{
+
+				&.hidden-lg{
+
+					color: white;
+					border-bottom: 1px solid transparent;
+					transition: all 0.3s ease;
+			 		-webkit-transition: all 0.3s ease-in-out;
+			  		-moz-transition: all 0.3s ease-in-out;
+			   		-o-transition: all 0.3s ease-in-out;
+
+					&:hover{
+
+						color: #BF1E2E;
+						border-bottom: 5px solid #BF1E2E;
+						transition: all 0.3s ease;
+			 		  	-webkit-transition: all 0.3s ease-in-out;
+			 		  	-moz-transition: all 0.3s ease-in-out;
+			 		  	-o-transition: all 0.3s ease-in-out;
+
+					}
+
+				}
+
+			}
+
+    		
 
     	}
 

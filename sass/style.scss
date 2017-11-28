@@ -115,6 +115,52 @@ div{
 
 }
 
+.carousel-indicators{
+
+	li{
+
+		float: left;
+
+	}
+
+}
+
+.carousel-caption{
+
+	&.d-md-block{
+		
+	    background: rgba(0,0,0,.8);
+	    border-radius: 12px;
+	    height: 260px;
+	    width: 500px;
+	    top: 20%;
+	    left: 15%;
+	    -webkit-box-shadow: 16px 18px 5px -4px rgba(0,0,0,0.75);
+	    -moz-box-shadow: 16px 18px 5px -4px rgba(0,0,0,0.75);
+	    box-shadow: 16px 18px 5px -4px rgba(0,0,0,0.75);
+	    -webkit-box-shadow: 8px 8px 5px -4px rgba(0,0,0,0.75);
+	    -moz-box-shadow: 8px 8px 5px -4px rgba(0,0,0,0.75);
+	    box-shadow: 8px 8px 5px -4px rgba(0,0,0,0.75);
+
+	    a{
+
+	    	&.-slider{
+
+		    	top: 20%;
+	    		position: relative;
+	    		display: block !important;
+	    		width: 300px !important;
+	    		margin: 0 auto;
+	   			-webkit-box-shadow: 16px 18px 5px -4px rgba(0,0,0,0.75);
+	   			-moz-box-shadow: 16px 18px 5px -4px rgba(0,0,0,0.75);
+	    		box-shadow: 16px 18px 5px -4px rgba(0,0,0,0.75);
+
+    		}
+	    }
+	}
+}
+
+
 .img-fluid{
 
 	max-width: 100%;

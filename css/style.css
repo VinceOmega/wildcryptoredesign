@@ -112,7 +112,6 @@ div.socialbox {
         border: 1px solid #BF1E2E;
         border-radius: 8px;
         color: #111;
-        line-height: 1.6;
         transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3 ease;
@@ -582,7 +581,7 @@ div.socialbox {
     #container main section.-games {
       margin-bottom: 20px; }
       #container main section.-games h3 {
-        margin-left: 46px; }
+        margin-left: 133px; }
       #container main section.-games div.-padded-15 {
         margin: 0;
         padding: 20px 0;
@@ -615,8 +614,8 @@ div.socialbox {
             -o-transition: all .3s ease; }
       #container main section.-games ul {
         display: block;
-        margin: 0;
-        padding-left: 40px; }
+        width: 1100px;
+        margin: 0 auto; }
         #container main section.-games ul li {
           display: inline-block;
           padding: 3px; }
@@ -624,7 +623,8 @@ div.socialbox {
             text-align: center; }
             #container main section.-games ul li div.-overlay {
               border: 5px solid transparent;
-              background: transparent; }
+              background: transparent;
+              margin: 0 14px; }
               #container main section.-games ul li div.-overlay:hover {
                 border: 5px solid white;
                 background: white; }
@@ -700,7 +700,6 @@ div.socialbox {
         border-radius: 8px;
         display: inline-block;
         color: white;
-        line-height: 1.6;
         transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3 ease;
@@ -765,6 +764,8 @@ div.socialbox {
           -webkit-transition: all 0.3s ease;
           -moz-transition: all 0.3 ease;
           -o-transition: all 0.3 ease; }
+          #container main section.focusarea div.focusarea__container form a.button.drawpurchase__uselastbutton {
+            font-size: 20px; }
           #container main section.focusarea div.focusarea__container form a.button:hover {
             color: black;
             transition: all 0.3s ease;
@@ -840,7 +841,6 @@ div.socialbox {
     #container footer div.div.-top.-left {
       min-width: 500px;
       display: inline-block;
-      width: 60%;
       margin: 40px 20px; }
       #container footer div.div.-top.-left ul {
         display: inline-block; }
@@ -866,8 +866,7 @@ div.socialbox {
                   color: #111; }
     #container footer div.div.-top.-right {
       min-width: 450px;
-      display: inline-block;
-      width: 25%; }
+      display: inline-block; }
       #container footer div.div.-top.-right div.-top {
         display: block;
         width: 125px;
@@ -879,11 +878,15 @@ div.socialbox {
           object-fit: contain; }
       #container footer div.div.-top.-right div.-bottom p {
         display: block;
-        font-weight: 300; }
+        font-weight: 300;
+        padding: 10px 25px; }
     #container footer div.div.-bottom.-fullwidth {
       margin: 20px auto; }
       #container footer div.div.-bottom.-fullwidth ul {
-        display: block; }
+        display: block;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 30px 0; }
         #container footer div.div.-bottom.-fullwidth ul li {
           display: inline-block;
           margin: 0 7%; }

@@ -164,7 +164,6 @@ div{
 			    border: 1px solid #BF1E2E;
 			    border-radius: 8px;
 			    color: #111;
-			    line-height: 1.6;
 			    transition: all 0.3s ease;
 			    -webkit-transition: all 0.3s ease;
 			    -moz-transition: all 0.3 ease;
@@ -1127,7 +1126,7 @@ div{
 
 				h3{
 
-					margin-left: 46px;
+				 	margin-left: 133px;
 
 				}
 
@@ -1183,9 +1182,8 @@ div{
 
 				ul{
 					display: block;
-					margin: 0;
-					padding-left: 40px;
-
+					width: 1100px;
+					margin: 0 auto;
 
 					li{
 
@@ -1200,6 +1198,7 @@ div{
 
 								border: 5px solid transparent;
 								background: transparent;
+								margin: 0 14px;
 
 								&:hover{
 
@@ -1365,7 +1364,6 @@ div{
 					    border-radius: 8px;
 					    display: inline-block;
 					    color: white;
-					    line-height: 1.6;
 					    transition: all 0.3s ease;
 					    -webkit-transition: all 0.3s ease;
 					    -moz-transition: all 0.3 ease;
@@ -1492,6 +1490,16 @@ div{
 									-webkit-transition: all 0.3s ease;
 			   						-moz-transition: all 0.3 ease;
 			   						-o-transition: all 0.3 ease;
+
+			   						&.drawpurchase{
+
+			   							&__uselastbutton{
+
+			   								font-size: 20px;
+
+			   							}
+
+			   						}
 
 									&:hover{
 
@@ -1718,7 +1726,6 @@ div{
 
 				min-width: 500px;
 				display: inline-block;
-				width: 60%;
 				margin: 40px 20px;
 				// max-width: 100%;
 
@@ -1784,7 +1791,6 @@ div{
 
 				min-width: 450px;
 				display: inline-block;
-				width: 25%;
 				// max-width: 100%;
 
 				div{
@@ -1816,6 +1822,7 @@ div{
 
 							display:block;
 							font-weight: 300;
+							padding: 10px 25px;
 							
 						}
 
@@ -1835,11 +1842,16 @@ div{
 				ul{
 
 					display: block;
+					border-top: 1px solid gray;
+					border-bottom: 1px solid gray;
+					padding: 30px 0;
 
 					li{
 
 					    display: inline-block;
 					    margin: 0 7%;
+
+
 					    
 						div{
 

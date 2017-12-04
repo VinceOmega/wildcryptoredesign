@@ -62,7 +62,8 @@ html, body {
   font-family: 'OpenSans', sans-serif !important; }
 
 body.root {
-  background: black !important; }
+  background: black !important;
+  font-size: 12px; }
 
 div iframe#launcher {
   left: 0 !important; }
@@ -70,7 +71,8 @@ div.socialbox {
   position: fixed;
   right: 0;
   top: 100px;
-  z-index: 100; }
+  z-index: 100;
+  font-size: 18px; }
 
 .carousel-item {
   height: 500px;
@@ -311,14 +313,77 @@ div.socialbox {
     border-radius: 0; }
   #container section.-leaderboard {
     color: #111;
-    background: white;
+    background: #e0e0e0;
     padding: 50px 0; }
     #container section.-leaderboard div {
       display: inline-block;
       width: 400px;
-      background: transparent;
-      border: 1px solid black;
-      border-radius: 10px; }
+      background: white;
+      border: 0;
+      border-radius: 5px; }
+      #container section.-leaderboard div.-widget {
+        -webkit-box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75); }
+      #container section.-leaderboard div.-header {
+        width: 100%;
+        border: 0; }
+        #container section.-leaderboard div.-header i {
+          display: inline-block;
+          font-size: 30px;
+          margin: 10px 10px; }
+        #container section.-leaderboard div.-header h3 {
+          display: inline-block; }
+      #container section.-leaderboard div.-container {
+        width: 90%;
+        display: block;
+        margin: 15px auto;
+        border: 0;
+        background: transparent;
+        padding: 20px 0;
+        position: relative; }
+        #container section.-leaderboard div.-container a {
+          color: black;
+          text-decoration: underline; }
+          #container section.-leaderboard div.-container a:hover {
+            color: #BF1E2E; }
+        #container section.-leaderboard div.-container .-green {
+          color: green;
+          font-weight: 700; }
+      #container section.-leaderboard div.-cta {
+        border: 0;
+        border-radius: 0;
+        height: 40px;
+        border-top: 1px solid black;
+        width: 100%;
+        background: transparent;
+        padding: 10px; }
+      #container section.-leaderboard div ul li {
+        border-top: 1px solid black;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        padding: 8px; }
+        #container section.-leaderboard div ul li div {
+          display: inline-block;
+          width: auto; }
+          #container section.-leaderboard div ul li div.-img {
+            border: 0;
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            background-image: url(/themes/wild/img/afro_logo.png);
+            background-repeat: no-repeat;
+            background-size: contain; }
+          #container section.-leaderboard div ul li div.-description {
+            border: 0;
+            top: -25px;
+            margin-left: 10px;
+            background: transparent;
+            position: relative; }
+  #container section.focusarea--big div.focusarea__container {
+    background: transparent !important; }
   #container header {
     margin: 0;
     padding: 0;
@@ -378,7 +443,7 @@ div.socialbox {
         text-align: center; }
       #container header nav div ul li.list {
         display: inline-block;
-        margin: 0 25px;
+        margin: 0 10px;
         font-size: 12px; }
       #container header nav div.-login {
         margin: 25px 0;
@@ -393,7 +458,8 @@ div.socialbox {
           transition: all 2s ease;
           -webkit-transition: all 2s ease;
           -moz-transition: all 2s ease;
-          -o-transition: all 2s ease; }
+          -o-transition: all 2s ease;
+          width: 120px; }
           #container header nav div.-login form input[type='text']:active, #container header nav div.-login form input[type='password']:active {
             border-bottom-style: solid;
             border-bottom-color: #BF1E2E;
@@ -609,7 +675,11 @@ div.socialbox {
           #container main section div#accordion div.panel-default .panel-heading h4 {
             line-height: 2.2; }
         #container main section div#accordion div.panel-default .panel-body {
-          padding: 20px 10px; }
+          padding: 20px 10px;
+          font-size: 12px; }
+          #container main section div#accordion div.panel-default .panel-body a {
+            text-decoration: underline;
+            font-size: 12px; }
         #container main section div#accordion div.panel-default:hover {
           background: #BF1E2E;
           color: white;
@@ -747,11 +817,11 @@ div.socialbox {
             float: right;
             background: white;
             color: black;
-            padding: 5px 8px;
+            padding: 8px;
             border: 1px solid black;
             border-radius: 10px;
             /* width: 5px; */
-            height: 40px;
+            height: auto;
             /* margin-bottom: 10px; */
             position: relative;
             top: -10px; }
@@ -876,7 +946,8 @@ div.socialbox {
           transition: all 0.3s ease;
           -webkit-transition: all 0.3s ease;
           -moz-transition: all 0.3 ease;
-          -o-transition: all 0.3 ease; }
+          -o-transition: all 0.3 ease;
+          font-size: 12px; }
           #container main section.focusarea div.focusarea__container a.button:hover {
             color: black;
             transition: all 0.3s ease;

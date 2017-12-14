@@ -107,6 +107,7 @@ body{
 	&.root{
 	
 		background: black !important;
+		background-image: url('/themes/wild/img/curls.png');
 		font-size: 12px;
 
 	}
@@ -863,6 +864,9 @@ div{
 
 				ul{
 
+					overflow: hidden;
+					height: 400px;
+
 					li{
 
 						border-top: 1px solid black;
@@ -1187,6 +1191,7 @@ div{
 		background-repeat: repeat;
 		max-width: 1366px;
 		font-family: 'OpenSansCondensed', sans-serif !important;
+		background-image: url('/themes/wild/img/curls.png');
 
 		section{
 

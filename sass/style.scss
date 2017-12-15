@@ -794,6 +794,7 @@ div{
 
 				&.-widget{
 				
+					text-align: left;
 					-webkit-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
 					-moz-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
 					box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
@@ -821,7 +822,9 @@ div{
 
 				&.-container{
 
-					width: 90%;
+					width: auto;
+					max-width: 1366px;
+					text-align: center;
 					display: block;
 					margin: 15px auto;
 					border: 0;
@@ -1189,7 +1192,6 @@ div{
 		margin: 0 auto;
 		padding: 0;
 		background-repeat: repeat;
-		max-width: 1366px;
 		font-family: 'OpenSansCondensed', sans-serif !important;
 		background-image: url('/themes/wild/img/curls.png');
 
@@ -1413,6 +1415,69 @@ div{
 
 			}
 
+			&.quicklinks{
+
+				margin: 0;
+				padding: 0;
+				background: #0e0e0e;
+
+				ul{
+
+					width: 100%;
+					margin: 0 0 0 148px;
+					padding-top: 20px;
+					font-size: 20px;
+					display: block;
+					position: relative;
+
+					li{
+
+						display: inline-block;
+						margin: 0 5px;
+						padding-bottom: 20px;
+						border-bottom: 2px solid transparent;
+						transition: all .6s ease;
+						-o-transition: all .6s ease;
+						-webkit-transition: all .6s ease;
+						-moz-transition: all .6s ease;
+
+						&:hover{
+
+							border-bottom: 2px solid #BF1E2E;
+							transition: all .6s ease;
+							-o-transition: all .6s ease;
+							-webkit-transition: all .6s ease;
+							-moz-transition: all .6s ease;
+
+						}						
+
+						a{
+
+							color: white;
+							font-weight: 300;
+							transition: all .6s ease;
+							-o-transition: all .6s ease;
+							-webkit-transition: all .6s ease;
+							-moz-transition: all .6s ease;
+
+							&:hover{
+
+								color: #BF1E2E;
+								transition: all .6s ease;
+								-o-transition: all .6s ease;
+								-webkit-transition: all .6s ease;
+								-moz-transition: all .6s ease;
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
 			h3{
 
 				&.header{
@@ -1429,13 +1494,14 @@ div{
 				&#accordion{
 
 					max-width: 500px;
-    				margin: 0;
+    				margin: 0 20px 0 0;
 				    padding: 0;
 				    background: white;
 				    border: 1px solid black;
 				    color: black;
 				    border-radius: 5px;
 				    float: right;
+				    background-image: url("/themes/wild/img/curls.png");
 
 				    div{
 
@@ -1721,9 +1787,10 @@ div{
 
 					&.-padded-15{
 
-						margin: 20px 0;
+						margin: 20px auto;
 						padding: 20px 0;
 						width: auto;
+						max-width: 1366px;
 						background: #111;
 						// border-radius: 5px;
 						border-top: .1px solid #313131;
@@ -2338,7 +2405,6 @@ div{
 		color: #9d9d9d;
 	    padding: 0;
 	    margin: 0 auto;
-	    max-width: 1366px;
    		font-family: 'Oswald', sans-serif !important;
 
 		div{

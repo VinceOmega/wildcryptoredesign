@@ -5,8 +5,9 @@ $(window).ready(function(){
 	Accordion();
 	scrollToTop();
 	gamesHoverOver();
-});
+    mobileMenu();
 
+});
 
 function Accordion(){
 
@@ -15,7 +16,6 @@ function Accordion(){
 	});
 
 }
-
 
 function scrollToTop(){
 
@@ -39,6 +39,18 @@ function gamesHoverOver(){
 		}
 
 		);
+}
+
+function mobileMenu(){
+
+    $("a.-content--mobile").click(function(){
+        if( $(this).parent().find('ul').hasClass('-remove') ){
+            $(this).parent().find('ul').removeClass('-remove');
+        } else{
+            $(this).parent().find('ul').addClass('-remove');
+        }
+    });
+
 }
 
 var clock;

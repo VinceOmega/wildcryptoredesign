@@ -2325,6 +2325,17 @@ div{
     						margin: 0 10px;
     						font-size: 12px;
 
+
+						}
+
+						&.-header{
+
+							&--mobile{
+
+								display: block;
+								
+							}
+
 						}
 
 					}
@@ -2351,6 +2362,7 @@ div{
 						    -moz-transition: all 2s ease;
 						    -o-transition: all 2s ease;
 						    width: 120px;
+						    margin: 10px 0;
 
 							&:active{
 
@@ -2431,7 +2443,6 @@ div{
 
 						display: block;
 	    				position: relative;
-	    				left: -40px;
 
 					}
 

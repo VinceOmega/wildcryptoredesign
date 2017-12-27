@@ -1231,6 +1231,55 @@ div{
 
 	}
 
+    &.resultcard{
+
+        &--70large{
+
+            -webkit-box-flex: 70 !important;
+            -ms-flex-positive: 70 !important;
+            flex-grow: 70 !important;
+
+        }
+
+
+    }
+
+    &.-width{
+
+        &--px1366{
+
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+            max-width: 1366px;
+            width: auto;
+
+        }
+
+    }
+
+    &.div{
+
+        &-nav{
+
+            &--fullwidthcontainer{
+
+                min-height: 112px;
+                display: block;
+                width: 100%;
+                position: fixed;
+                background: black;
+                z-index: 99;
+                -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+
+            }
+
+        }
+
+    }
+
 }
 
 #carousel{
@@ -2278,7 +2327,7 @@ div{
 
 		margin: 0;
 		padding: 0;
-		min-height: 95px;
+		min-height: 112px;
 		font-weight: 300;
 		width: 100%;
 		background: black;
@@ -2309,6 +2358,12 @@ div{
 			position: fixed;
 			z-index: 100;
 			width: 100%;
+            left: 0;
+            right: 0;
+            max-width: 1366px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
 			-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
 			-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
 			box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
@@ -2760,13 +2815,14 @@ div{
 				&#accordion{
 
 					max-width: 500px;
-    				margin: 0 100px 0 0;
+    				// margin: 0 100px 0 0;
+                    margin: 0;
 				    padding: 0;
 				    background: white;
 				    border: 1px solid black;
 				    color: black;
 				    border-radius: 5px;
-				    float: right;
+				    // float: right;
 
 				    div{
 
@@ -3041,7 +3097,7 @@ div{
 
 				h3{
 
-				 	margin-left: 138px;
+				 	margin-left: 92px;
 					margin-top: 10px;
 					margin-bottom: 10px;
 					color: #BF1E2E;
@@ -3053,7 +3109,7 @@ div{
 					&.-padded-15{
 
 						margin: 20px auto;
-						padding: 20px 0;
+						padding: 30px 10px;
 						width: auto;
 						max-width: 1366px;
 						background: #111;
@@ -3849,10 +3905,10 @@ div{
 		    z-index: 90;
 		    position: fixed;
 		    top: 20px;
-		    right: 3%;
-		    width: 100px;
-		    height: 100px;
-		    top: 85%;
+		    right: 1%;
+		    width: 80px;
+		    height: 80px;
+		    top: 83%;
 		    border: 5px solid #BF1E2E;
 		    border-radius: 80px;
 		    transition: all 0.3s ease;
@@ -3884,11 +3940,11 @@ div{
 
 			        width: 30px;
     				height: 30px;
-    				font-size: 50px;
+    				font-size: 40px;
     				position: relative;
     				top: 10px;
-    				left: 20px;
-    				color: #BF1E2E;	
+    				left: 15px;
+    				color: #BF1E2E;
 					transition: all 0.3s ease;
 				    -webkit-transition: all 0.3s ease;
 				    -moz-transition: all 0.3s ease;
@@ -4210,7 +4266,31 @@ div{
 				height: auto;
 
 			}
+
+            &.-games{
+
+                ul{
+
+                    text-align: center;
+
+                }
+
+            }
 		}
+
+        div{
+
+            &.-width{
+
+                &--px1366{
+
+                    margin: 0 auto;
+
+                }
+
+            }
+
+        }
 
 	}
 

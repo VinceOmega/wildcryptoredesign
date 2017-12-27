@@ -1,0 +1,43 @@
+.carousel-caption.d-md-block {
+background: rgba(0, 0, 0, 0.8);
+border-radius: 12px;
+height: 260px;
+width: 500px;
+top: 20%;
+left: 15%;
+-webkit-box-shadow: none !important;
+-moz-box-shadow: none !important;
+box-shadow: none !important;
+-webkit-box-shadow: none !important;
+-moz-box-shadow: none !important;
+}
+
+
+#container main section.-games ul  {
+
+display: block;
+width: 1360px !important;
+margin: 0 auto;
+
+}
+
+#container main section.-games ul li  {
+
+display: inline-block;
+padding: 0px;
+background-image: url('');
+
+}
+
+#section.focusarea.focusareacolour.focusarea--background.focusarea--big — Style Attribute  {
+
+background-image: url('') !important;  
+
+}
+
+
+#container main section.-games div.-padded-15  {
+
+padding: 30px 10px;
+
+}

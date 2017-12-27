@@ -1394,12 +1394,7 @@ div{
 	    width: 500px;
 	    top: 20%;
 	    left: 15%;
-	    -webkit-box-shadow: 16px 18px 5px -4px rgba(0,0,0,0.75);
-	    -moz-box-shadow: 16px 18px 5px -4px rgba(0,0,0,0.75);
-	    box-shadow: 16px 18px 5px -4px rgba(0,0,0,0.75);
-	    -webkit-box-shadow: 8px 8px 5px -4px rgba(0,0,0,0.75);
-	    -moz-box-shadow: 8px 8px 5px -4px rgba(0,0,0,0.75);
-	    box-shadow: 8px 8px 5px -4px rgba(0,0,0,0.75);
+
 
 	    a{
 
@@ -2214,6 +2209,69 @@ div{
 
 		}
 
+        &.quicklinks{
+
+                margin: 0;
+                padding: 0;
+                background: #0e0e0e;
+
+                ul{
+
+                    width: 100%;
+                    margin: 0 0 0 148px;
+                    padding-top: 20px;
+                    font-size: 20px;
+                    display: block;
+                    position: relative;
+
+                    li{
+
+                        display: inline-block;
+                        margin: 0 5px;
+                        padding-bottom: 20px;
+                        border-bottom: 2px solid transparent;
+                        transition: all .6s ease;
+                        -o-transition: all .6s ease;
+                        -webkit-transition: all .6s ease;
+                        -moz-transition: all .6s ease;
+
+                        &:hover{
+
+                            border-bottom: 2px solid #BF1E2E;
+                            transition: all .6s ease;
+                            -o-transition: all .6s ease;
+                            -webkit-transition: all .6s ease;
+                            -moz-transition: all .6s ease;
+
+                        }                       
+
+                        a{
+
+                            color: white;
+                            font-weight: 300;
+                            transition: all .6s ease;
+                            -o-transition: all .6s ease;
+                            -webkit-transition: all .6s ease;
+                            -moz-transition: all .6s ease;
+
+                            &:hover{
+
+                                color: #BF1E2E;
+                                transition: all .6s ease;
+                                -o-transition: all .6s ease;
+                                -webkit-transition: all .6s ease;
+                                -moz-transition: all .6s ease;
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
 	}
 
 	header{
@@ -2685,68 +2743,6 @@ div{
 
 			}
 
-			&.quicklinks{
-
-				margin: 0;
-				padding: 0;
-				background: #0e0e0e;
-
-				ul{
-
-					width: 100%;
-					margin: 0 0 0 148px;
-					padding-top: 20px;
-					font-size: 20px;
-					display: block;
-					position: relative;
-
-					li{
-
-						display: inline-block;
-						margin: 0 5px;
-						padding-bottom: 20px;
-						border-bottom: 2px solid transparent;
-						transition: all .6s ease;
-						-o-transition: all .6s ease;
-						-webkit-transition: all .6s ease;
-						-moz-transition: all .6s ease;
-
-						&:hover{
-
-							border-bottom: 2px solid #BF1E2E;
-							transition: all .6s ease;
-							-o-transition: all .6s ease;
-							-webkit-transition: all .6s ease;
-							-moz-transition: all .6s ease;
-
-						}						
-
-						a{
-
-							color: white;
-							font-weight: 300;
-							transition: all .6s ease;
-							-o-transition: all .6s ease;
-							-webkit-transition: all .6s ease;
-							-moz-transition: all .6s ease;
-
-							&:hover{
-
-								color: #BF1E2E;
-								transition: all .6s ease;
-								-o-transition: all .6s ease;
-								-webkit-transition: all .6s ease;
-								-moz-transition: all .6s ease;
-
-							}
-
-						}
-
-					}
-
-				}
-
-			}
 
 			h3{
 
@@ -3106,8 +3102,9 @@ div{
 
 				ul{
 					display: block;
-					width: 1100px;
+					width: auto;
 					margin: 0 auto;
+                    max-width: 1360px;
 
 					li{
 

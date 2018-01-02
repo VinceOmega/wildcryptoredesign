@@ -2070,6 +2070,29 @@ div{
 				}
 			}
 
+            &--HomePage{
+
+                background-image: url('/assets/Uploads/wild-crypto.jpg') !important;
+
+            }
+
+            &--Page{
+
+                div{
+
+                    &.focusarea{
+
+                        &__container{
+
+                            background: transparent !important;
+                            color: white  !important;
+
+                        }
+
+                    }
+                }
+            }
+
 			&.game{
 
 				a{
@@ -3902,11 +3925,10 @@ div{
 			float: right;
 		    z-index: 90;
 		    position: fixed;
-		    top: 20px;
+		    top: 80%;
 		    right: 1%;
 		    width: 80px;
 		    height: 80px;
-		    top: 83%;
 		    border: 5px solid #BF1E2E;
 		    border-radius: 80px;
 		    transition: all 0.3s ease;
@@ -4194,8 +4216,104 @@ div{
 	#container{
 
 		header{
+
     		height: 278px;
     		width: 100%;
+
+            div{
+
+                &.div{
+
+                    &-nav{
+
+                        &--fullwidthcontainer{
+
+                            position: relative;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            nav{
+
+                position: relative;
+
+                div{
+
+
+                    &.-content{
+
+                        ul{
+
+                            padding: 0;
+                            width: 100%;
+
+                            li{
+
+                                i{
+
+                                   &.fa{
+
+
+                                        &-bars{
+
+                                            font-size: 80px;
+
+                                        }
+
+
+                                   }
+
+                                }
+
+                                ul{
+
+
+                                    background: white;
+
+
+                                }
+
+                                &.list{
+
+                                    display: block;
+                                    border: 1px solid black;
+                                    padding: 20px 0;
+                                    background: white;
+                                    margin: 0;
+
+                                    &:hover{
+
+                                        background: #BF1E2E;
+                                    }
+
+                                    a{
+
+                                        color: black;
+                                        font-size: 50px;
+
+                                        &:hover{
+
+                                            text-decoration: none;
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
 
 			a{
 

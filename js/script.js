@@ -6,6 +6,7 @@ $(window).ready(function(){
 	scrollToTop();
 	gamesHoverOver();
     mobileMenu();
+    // useFlowType();
 
 });
 
@@ -49,6 +50,16 @@ function mobileMenu(){
         } else{
             $(this).parent().find('ul').addClass('-remove');
         }
+    });
+
+}
+
+
+function useFlowType(){
+
+    $('body').flowtype({
+        minimun: 500,
+        maximum : 1366
     });
 
 }

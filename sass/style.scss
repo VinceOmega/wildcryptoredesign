@@ -2072,7 +2072,8 @@ div{
 
             &--HomePage, &--DrawPage{
 
-                background-image: url('/assets/Uploads/wild-crypto.jpg') !important;
+                background-image: none !important;
+                background: #111 !important;
 
             }
 
@@ -2128,8 +2129,9 @@ div{
 
 			height: 500px;
 			max-height: 500px;
-			background-image: url('/assets/Uploads/gameshowcase-1920x500.jpg');
+			background-image: none;
 			background-size: cover;
+            background-color: #111;
 			object-fit: contain;
 	
 			div{
@@ -3181,7 +3183,7 @@ div{
 					display: block;
 					width: auto;
 					margin: 0 auto;
-                    max-width: 1100px;
+                    max-width: 1240px;
 
 					li{
 
@@ -3196,7 +3198,7 @@ div{
 
 								border: 5px solid transparent;
 								background: transparent;
-								margin: 0 14px;
+								margin: 0;
 
 								&:hover{
 

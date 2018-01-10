@@ -2411,9 +2411,9 @@ div{
             width: 100%;
             margin: 0 auto;
             padding: 0;
-			-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
-			-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
-			box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+			// -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+			// -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+			// box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
 
 			/*
 			&:hover{
@@ -3260,6 +3260,9 @@ div{
 							    padding: 15px;
 							    background: #BF1E2E;
 							    font-weight: 700;
+                                margin: 0;
+                                top: -4px;
+                                position: relative;
 
 							}
 
@@ -3780,7 +3783,7 @@ div{
 
 			&.div.-top.-left{
 
-				min-width: 500px;
+				width: auto;
 				display: inline-block;
 				margin: 40px 20px;
 				// max-width: 100%;
@@ -3845,7 +3848,7 @@ div{
 
 			&.div.-top.-right{
 
-				min-width: 450px;
+				// width: auto;
 				display: inline-block;
 				margin: 40px 20px;
 
@@ -3883,6 +3886,16 @@ div{
 						}
 
 					}
+
+                    &.-curacao{
+
+                        &--container{
+
+                            margin: 0 auto;
+
+                        }
+
+                    }
 
 
 				}

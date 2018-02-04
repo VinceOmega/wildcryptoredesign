@@ -1,3 +1,117 @@
+.focusarea.focusareacolour.focusarea--TopUpPage.focusarea--big {
+height: 80px !important;
+min-height: 80px !important;
+background: rgba(0, 0, 0, 0.70) !important;
+}
+
+#ss-widget {
+width: 100%;
+margin: 20px auto;
+padding: 0;
+display: block;
+
+}
+
+.focusarea.focusareacolour.focusarea--SupportPage.omega.short.focusarea--small {
+height: 80px;
+background: rgba(0, 0, 0, 0.70) !important;
+}
+
+.focusarea.focusareacolour.focusarea--AccountPage.focusarea--small {
+height: 80px;
+background: rgba(0, 0, 0, 0.70) !important;
+}
+
+h2.account__header {
+color: #000000;
+}
+
+ul.etabs__tabs {
+margin: 20px 20px 0px 20px;
+}
+
+
+#container main section div.account__section.box {
+border: 1px solid #ddd;
+padding: 50px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+border-radius: 3px;
+background: #fff;
+margin: 20px 20px 0px 20px;
+}
+
+
+#container main section div.account div {
+border-radius: 3px;
+}
+
+#container main section.-games ul li img {
+width: 295px;
+height: auto;
+}
+
+
+#container main section.-games ul li img {
+width: 295px;
+height: auto;
+}
+
+#container header nav div.-login {
+margin: 20px 15px 0px 0px;
+padding: 0;
+float: right;
+}
+
+
+main#HomePage section.focusarea.focusareacolour.focusarea--HomePage.focusarea--background.focusarea--big,
+main#DrawPage section.focusarea.focusareacolour.focusarea--HomePage.focusarea--background.focusarea--big {
+/*background-image: url('/themes/wild/img/fox2.png') !important;*/
+background-repeat: no-repeat;
+background-position: center; 
+background-size: cover;
+min-height: 500px;
+}
+
+.drawsidebar  {
+width: 0px !important;
+text-align: center
+}
+
+
+#container main section.focusarea div.focusarea__container  {
+width: auto !important;
+}
+
+a.button.button--facebook  {
+visibility: hidden;
+}
+
+#container main#RegisterPage h3.register__subtitle  {
+margin: 0 0 0px 0 !important;
+}
+
+
+#container main section.-games ul li div.-overlay a  {
+font-size: 18px;
+}
+
+#container main section.-games  {
+margin: 10px 0px 20px 0px;
+}
+
+#container main section.-games div.-padded-15  {
+border: 1px solid #ddd;
+padding: 50px 20px 10px 20px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+border-radius: 3px;
+background: #fff;
+max-width: 1366px;
+display: block;
+width: auto;
+margin: 0 auto;
+}
+
+
 #container  {
 background: rgb(15, 15, 15) !important;
 }
@@ -5,6 +119,9 @@ background: rgb(15, 15, 15) !important;
 
 #container main div.cmsinput--faint  {
 background-image: url("/themes/wild/img/bg3.jpg") !important;
+max-width: 1366px;
+margin: 0 auto;
+
 }
 
 
@@ -13,20 +130,39 @@ font-size: 16px;
 color: #000000;
 }
 
+#container main section.drawbox  {
+display: block;
+width: auto;
+margin: 15px auto;
+max-width: 1366px;
+}
+
+.drawbox  {
+box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+margin-bottom: 10px;
+border: 1px solid #ddd;
+background-color: #fff;
+border-radius: 3px;
+font-size: 15px;
+line-height: 22px;
+letter-spacing: 0;
+}
 
 .cmsinput--faint h2  {
 color: #BF1E2E !important;
 }
 
-section.focusarea.focusareacolour.focusarea--Page.focusarea--small  {
+section.focusarea.focusareacolour.focusarea--Page,
+section.focusarea.focusareacolour.focusarea--SectionedPage,
+section.focusarea.focusareacolour.focusarea--HelpPage,
+section.focusarea.focusareacolour.focusarea--ResultsPage  {
 height: 80px;
 background: rgba(0, 0, 0, 0.70) !important;
 }
 
 
 #container main section.focusarea div.focusarea__inner .focusarea__titletext  {
-margin-top: -30px;
-margin-left: 0px;
+margin-top: -10px;
 }
 
 
@@ -36,6 +172,8 @@ padding: 40px;
 color: black;
 opacity: .9;
 text-align: center;
+border-radius: 3px;
+margin: 50px 0px;
 }
 
 
@@ -204,14 +342,12 @@ position: relative;
 }
 
 #container main section.focusarea div.focusarea__container {
-width: auto;
-max-width: 1366px;
-margin: 20px;
+width: 100%;
 height: auto;
 }
 
 #container main div.containerwrap {
-margin: 0px;
+margin-top: 0px;
 }
 
 
@@ -228,7 +364,7 @@ display: inline-block !important
 #container main section div#accordion  {
 border: 1px solid rgba(255, 255, 255, 0.30);
 color: black;
-border-radius: 10px;
+border-radius: 3px;
 }
 
 #container main section div#accordion div.panel-default:hover   {
@@ -248,7 +384,7 @@ margin-bottom: 0px;
 
 #container main section.-info-box  {
 background: #be1e2d;
-padding: 30px 0;
+padding: 20px 0;
 background-image: url('/themes/wild/img/faq-BackGround.png');
 background-repeat: no-repeat;
 background-position: center; 
@@ -263,9 +399,9 @@ max-height: 390px;
 #container section.-promo { 
 height: auto;
 min-height: 500px;
-background-image: url('/themes/wild/img/signup-BackGround.jpg');
+background-image: url('/themes/wild/img/signup-BackGround.png');
 background-size: cover;
-background-color: #111;
+background-color: rgba(255, 255, 255, 0.0) !important;
 background-repeat: no-repeat;
 background-position: center;  
 }

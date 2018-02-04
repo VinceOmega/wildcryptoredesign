@@ -1,0 +1,4 @@
+<div class="cmsinput cmsinput--faint cmsinput--links">
+    $Content
+</div>
+<% include Accordion %>

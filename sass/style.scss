@@ -141,6 +141,14 @@
 	content: "\e246"
 }
 
+.big-glyphicons-group:before{
+    content: "\e044"
+}
+
+.big-glyphicons-bitcoin:before{
+    content: "\e548"
+}
+
 .glyphicons-asterisk:before {
     content: "\002a"
 }
@@ -1215,7 +1223,7 @@ div{
 
 		&#launcher{
 
-			left: 0 !important;
+			right: 0 !important;
 
 		}
 
@@ -1755,7 +1763,7 @@ div{
 
 				background: white;
 			    border: 1px solid transparent;
-			    border-radius: 8px;
+			    border-radius: 3px;
 			    color: #111;
 			    transition: all 0.3s ease;
 			    -webkit-transition: all 0.3s ease;
@@ -2107,8 +2115,11 @@ div{
 
             &--HomePage, &--DrawPage{
 
-                background-image: none !important;
                 background: #111 !important;
+                background-image: url('/themes/wild/img/fox2.png') !important;
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+                background-size: cover !important;
 
                 div{
 
@@ -2207,7 +2218,90 @@ div{
 						margin: 15px 0;
                         float: right;
 
+                        &__left{
+
+                            float: left;
+                            background: white;
+                            padding: 10px;
+                            border: 1px solid gray;
+                            border: 1px solid #ddd;
+                            padding: 30px 20px 10px 20px;
+                            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+
+                            .iwgbox--big{
+
+                                width: 380px;
+                                min-height: 432px;
+                                margin: 0 auto 20px auto;
+
+                            }
+
+                            .iwgbox{
+
+                                &__price{
+
+                                    // float: right;
+                                    background: white;
+                                    color: black;
+                                    padding: 8px;
+                                    border: 1px solid black;
+                                    border-radius: 3px;
+                                    height: auto;
+                                    position: relative;
+                                    display: inline-block;
+                                    margin: 0 auto;
+
+                                }
+
+                                &__splash{
+
+                                    height: auto;
+
+                                }
+
+                                &__caption{
+
+                                    background: #BF1E2E;
+                                    height: 80px;
+
+                                    .button{
+
+                                        &--thin{
+
+                                            background: rgba( 60,60,60,.9);
+                                            margin: 0 auto;
+
+                                            &:hover{
+
+
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
 					}
+
+                    &--left{
+
+                        a{
+
+                            border: 1px solid white;
+                            background: transparent;
+                            width: 80%;
+                            margin: 25px;
+                            padding: 10px;
+
+                        }
+
+                    }
 
 					&--text{
 
@@ -2231,6 +2325,7 @@ div{
 						&.-huge{
 
 							font-size: 200px;
+                            line-height: 1.0;
 
 						}
 
@@ -2714,7 +2809,7 @@ div{
 
                         &--right{
 
-                            display: none;
+                            // display: none;
 
                         }
                     }
@@ -2749,6 +2844,85 @@ div{
                 }
 
             }
+
+
+        }
+
+        &#InstantWinGames{
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover !important;
+
+            .focusarea{
+
+                max-height: 300px;
+
+                &__inner{
+
+                    max-height: 300px;
+
+                    .containerwrap{
+
+                        max-height: 300px;
+
+                        div{
+
+                            &.-logo{
+
+                                position: relative;
+                                bottom: 10%;
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                &__ctacontainer{
+
+                    display: block;
+                    right: 99%;
+                    position: relative;
+
+                    a{
+
+                        &.button{
+
+                            width: 300px;
+                            padding: 20px 50px;
+                            height: 60px;
+                            line-height: 1.2;
+                            background: transparent;
+                            border: 1px solid white;
+                            font-weight: 700;
+
+                            &:hover{
+
+                                border-radius: 3px;
+                                background: white;
+
+                            }
+
+                        }
+
+                    }
+
+                    &-right{
+
+                        left: 99%;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &#SectionedPage{
 
 
         }
@@ -3535,7 +3709,7 @@ div{
 
 					input, p, a, h3, label{
 
-						margin: 7px auto;
+						// margin: 7px auto;
 
 					}
 
@@ -3594,10 +3768,19 @@ div{
 
 					&.focusarea__container{
 
-						background: #BF1E2E;
+						background: transparent;
 						padding: 20px 0;
 						color: black;
 						max-width: 1366px;
+
+                        h1{
+
+                            &.focusarea__titletext{
+
+                                color: white;
+
+                            }
+                        }
 
 						&.game{
 
@@ -3733,7 +3916,6 @@ div{
 		   						-moz-transition: all 0.3 ease;
 		   						-o-transition: all 0.3 ease;
 		   						font-size: 12px;
-                                display: none;
 
 								&:hover{
 
@@ -4409,6 +4591,19 @@ div{
 
 							span{
 
+                                &.big{
+
+                                    &-glyphicons{
+
+                                        &-chat{
+
+                                            font-size: 38px;
+                                            color: white;
+
+                                        }
+                                    }
+                                }
+
 								&.-actionbar{
 
 									&--text{
@@ -4443,9 +4638,26 @@ div{
 
 	#container{
 
+        div{
+
+            &.div{
+
+                &.-clear{
+
+                    width: 100%;
+                    display: block;
+                    height: auto;
+                    min-height: 20px;
+                
+                }
+
+            }
+
+        }
+
 		header{
 
-    		height: 278px;
+    		height: auto;
     		width: 100%;
 
             div{
@@ -4456,7 +4668,45 @@ div{
 
                         &--fullwidthcontainer{
 
-                            position: relative;
+                            position: fixed;
+                            height: auto;
+
+
+                        }
+
+                    }
+
+                    &.-logo{
+
+                        width: 100%;
+                    }
+
+                    &.-content{
+
+                        text-align: right;
+                        display: inline-block;
+                        float: right;
+                        width: 100%;
+                        top: -80px;
+                        position: relative;
+                        left: -10px;
+
+                        ul{
+
+                            border-left: none;
+                        }
+
+                        i{
+
+                            &.fa{
+
+                                &-bars{
+
+                                    font-size: 30px;
+
+                                }
+
+                            }
 
                         }
 
@@ -4513,6 +4763,7 @@ div{
                                     padding: 20px 0;
                                     background: white;
                                     margin: 0;
+                                    text-align: center;
 
                                     &:hover{
 
@@ -4522,11 +4773,14 @@ div{
                                     a{
 
                                         color: black;
-                                        font-size: 50px;
+                                        font-size: 25px;
+                                        line-height: 1.2;
+                                        text-decoration: none;
 
                                         &:hover{
 
-                                            text-decoration: none;
+                                            text-decoration: none !important;
+                                            border-bottom: 1px solid transparent;
 
                                         }
 
@@ -4581,7 +4835,7 @@ div{
 
 
 		section{
-
+          
 			&.jumbotron{
 
 				background: black;
@@ -4615,12 +4869,27 @@ div{
                 background-image: url('/themes/wild/img/bg3.jpg');
                 background-size: 100% !important;
 
+                div{
+
+                    &.-padded-15{
+
+                        margin-top: 130px !important;
+
+                    }
+
+                }
+
                 ul{
 
                     text-align: center;
 
                 }
 
+            }
+
+            &.-info-box{
+
+                display: none;
             }
 		}
 
@@ -4639,6 +4908,8 @@ div{
         }
 
 	}
+
+
 
 }
 
